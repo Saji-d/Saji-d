@@ -1,62 +1,28 @@
 ## 👋 Hi, I'm Sajidur Rahman Sajid
 
-🎓 Computer Science & Engineering (CSE) Undergraduate  
-🤖 Aspiring **AI / Machine Learning Engineer**  
-📍 Interested in **AI/ML, Computer Vision, and Data-Driven Systems**
+🎓 Computer Science & Engineering (CSE) undergraduate  
+🤖 Aspiring AI / Machine Learning Engineer  
 
----
-
-## 🧠 AI / Machine Learning Focus
-- Computer Vision & Image Processing
+### 🔍 Focus Areas
+- Natural Language Processing (NLP)
 - Machine Learning & Deep Learning
-- Pattern Recognition
-- Feature Extraction & Model Evaluation
-- End-to-end ML workflows
+- Computer Vision & Pattern Recognition
+- Data-driven model evaluation
 
----
+### 🚀 What I Work On
+- Sentiment analysis using ML & transformer-based models  
+- Computer vision projects (face recognition, digit recognition, classification)  
+- End-to-end ML pipelines using Python and Jupyter notebooks  
+- Academic and research-oriented AI/ML projects  
 
-## 🛠 Technical Skills
+### 📂 Featured Repositories
+- **Natural Language Processing Projects** – sentiment analysis, text preprocessing, transformers  
+- **Computer Vision & Pattern Recognition** – CNNs, EfficientNet, LBPH, MLPs  
+- **RFM-based Customer Analytics** – segmentation & risk prediction  
+- **3D City Simulation (OpenGL)** – graphics & simulation systems  
 
-**Languages**
-- Python, C++, Java, C#
+### 🎯 Goal
+Seeking an **AI / ML internship** to apply practical ML skills, learn from real-world datasets,  
+and grow as a research-driven engineer.
 
-**AI / ML & CV**
-- OpenCV
-- TensorFlow
-- CNNs (LBPH, EfficientNet)
-- MLP Neural Networks
-- Image Classification & Recognition
-
-**Other Engineering Skills**
-- OpenGL (Graphics & Simulation)
-- SQL & Database Design
-- WinForms & Web-Based Systems
-
----
-
-## 🚀 Featured Projects
-
-🔹 **Computer Vision & Pattern Recognition**  
-Face recognition, digit classification, and multi-class image classification using ML & DL models.
-
-🔹 **3D City Simulation (OpenGL)**  
-A real-time simulated city featuring traffic logic, weather effects, day/night cycles, and interactive controls.
-
-🔹 **Spark Powerhouse Gym – C# & Web Systems**  
-Role-based systems demonstrating software architecture, UI design, and structured application flow.
-
-🔹 **Online Bookstore Database Design**  
-ER modeling, normalization, and SQL-based system design.
-
----
-
-## 🎯 Career Goal
-Actively seeking an **AI / Machine Learning Internship** where I can:
-- Apply ML & CV concepts to real-world problems
-- Learn from industry-grade datasets and pipelines
-- Grow as a research-oriented and practical AI engineer
-
----
-
-📫 **Let’s connect!**  
-Feel free to explore my repositories and reach out.
+📫 Feel free to explore my repositories and connect.
