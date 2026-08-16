@@ -1,0 +1,41 @@
+name: Update GitHub Streak Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # daily at midnight UTC
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/streak-stats.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update-streak-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate streak stats SVG
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          user_id: Saji-d
+          # Same colors as the previous demolab.com card, kept for visual consistency
+          options: >-
+            user=Saji-d&background=0B0E1A&ring=9B8CFA&fire=9B8CFA
+            &currStreakLabel=9B8CFA&sideLabels=5B6272&currStreakNum=EEF0FA
+            &sideNums=EEF0FA&dates=5B6272&stroke=1C2030&hide_border=true
+          path: assets/github-streak.svg
+          # For private contributions to count, replace with a PAT stored as
+          # a repo secret (e.g. secrets.STREAK_TOKEN) with the repo/user scope.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/github-streak.svg
+          git diff --cached --quiet || git commit -m "chore: update GitHub streak stats"
+          git push

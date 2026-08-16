@@ -160,7 +160,7 @@ Real-time face identification pipeline: detects faces in video, trains embedding
 </table>
 
 <div align="center">
-<img src="https://streak-stats.demolab.com/?user=Saji-d&background=0B0E1A&ring=9B8CFA&fire=9B8CFA&currStreakLabel=9B8CFA&sideLabels=5B6272&currStreakNum=EEF0FA&sideNums=EEF0FA&dates=5B6272&stroke=1C2030&hide_border=true" width="100%" alt="GitHub streak stats">
+<img src="./assets/github-streak.svg" width="100%" alt="GitHub streak stats">
 
 <br/>
 
