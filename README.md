@@ -1,299 +1,195 @@
-<!-- =========================================================
-     SAJIDUR RAHMAN SAJID — GITHUB PROFILE README
-     Modern, minimal, engineering-focused profile
-========================================================= -->
-
 <div align="center">
 
-<a href="https://sajidur.me">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=230&section=header&text=Sajidur%20Rahman%20Sajid&fontSize=46&fontColor=E8FFFF&fontAlignY=35&desc=Software%20Engineer%20%7C%20Backend%20%7C%20AI%2FML&descAlignY=57&descSize=19&descColor=70E1D7&animation=fadeIn&color=0:071216,50:0B2B31,100:0D6B69" width="100%"/>
-</a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+  <img src="assets/banner-dark.svg" alt="Sajidur Rahman Sajid, Software Engineer | Backend | AI/ML" width="100%">
+</picture>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=1000&color=9B8CFA&center=true&vCenter=true&width=780&lines=Software+Developer+Trainee+%40+Ledgercross;Building+InvoicePilot%3A+AI+invoice+processing;GraphRAG+legal+research+%40+CaseVault;BSc+CSE%2C+AIUB+(3.92+%2F+4.00+CGPA);Open+to+Full-Stack%2C+AI%2FML+%26+Research+roles" alt="Software Developer Trainee at Ledgercross, building InvoicePilot and CaseVault, BSc CSE at AIUB, open to full-stack, AI/ML and research roles" />
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=2800&pause=1000&color=70E1D7&center=true&vCenter=true&width=780&lines=Building+software+that+solves+real+problems.;Backend+systems+%2B+AI%2FML+pipelines.;OCR+%7C+RAG+%7C+Computer+Vision+%7C+ML.;From+idea+%E2%86%92+architecture+%E2%86%92+working+product." alt="Typing introduction"/>
+<a href="mailto:sajidsajidurrahman99@gmail.com"><img src="https://img.shields.io/badge/OPEN%20TO%20WORK-Full%20Stack%2C%20Applied%20ML%2C%20Research-8B7CF6?style=for-the-badge&labelColor=0B0E1A" alt="Open to work"/></a>
 
 <br/><br/>
 
-<a href="https://sajidur.me">
-  <img src="https://img.shields.io/badge/PORTFOLIO-0B2024?style=for-the-badge&logo=googlechrome&logoColor=70E1D7"/>
-</a>
-<a href="https://github.com/Saji-d">
-  <img src="https://img.shields.io/badge/GITHUB-0B2024?style=for-the-badge&logo=github&logoColor=F2FFFF"/>
-</a>
-<a href="mailto:your-email@example.com">
-  <img src="https://img.shields.io/badge/EMAIL-0B2024?style=for-the-badge&logo=gmail&logoColor=EA4335"/>
-</a>
+<a href="https://sajidur.me"><img src="https://img.shields.io/badge/Portfolio-0B0E1A?style=for-the-badge&logo=googlechrome&logoColor=9B8CFA" alt="Portfolio"/></a>
+<a href="https://github.com/Saji-d"><img src="https://img.shields.io/badge/GitHub-0B0E1A?style=for-the-badge&logo=github&logoColor=EEF0FA" alt="GitHub"/></a>
+<a href="https://www.linkedin.com/in/sajidur-rahman-sajid/"><img src="https://img.shields.io/badge/LinkedIn-0B0E1A?style=for-the-badge&logo=linkedin&logoColor=8B7CF6" alt="LinkedIn"/></a>
+<a href="mailto:sajidsajidurrahman99@gmail.com"><img src="https://img.shields.io/badge/Email-0B0E1A?style=for-the-badge&logo=gmail&logoColor=9B8CFA" alt="Email"/></a>
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=Saji-d&style=for-the-badge&color=0D6B69&label=PROFILE%20VIEWS" alt="Profile views"/>
+<img src="https://komarev.com/ghpvc/?username=Saji-d&style=for-the-badge&color=8B7CF6&labelColor=0B0E1A&label=VISITORS" alt="Profile visitors"/>
 
 </div>
 
----
-
-## `> whoami`
+```
+$ whoami
+```
 
 ```python
-class SajidurRahmanSajid:
-    role = "Software Engineer"
-    focus = ["Backend", "AI/ML", "Computer Vision", "Intelligent Systems"]
-
-    education = "BSc in CSE — Information Systems @ AIUB"
-    cgpa = "3.92 / 4.00"
-
-    building = [
-        "InvoicePilot",
-        "CaseVault",
-        "Neuro-Screen",
-    ]
-
-    philosophy = "Build it well. Understand it deeply. Ship it."
+role      = "Software Developer Trainee @ Ledgercross"
+focus     = ["Full-Stack Engineering", "Applied AI/ML", "Backend Systems"]
+education = "BSc CSE, AIUB (3.92 / 4.00)"
 ```
 
-I'm **Sajidur Rahman Sajid**, a software engineer focused on building **backend systems, AI/ML pipelines, and intelligent applications**.
+I build full-stack software and production-oriented AI/ML systems, from data pipelines and model training to APIs, databases, and the interfaces people use. Most of that work sits where backend engineering meets applied AI.
 
-I enjoy working across the stack when a problem requires it — from data and models to APIs, databases, system architecture, and the final user-facing product.
+## Focus
 
-My strongest interest is where **software engineering meets AI**: taking an idea or model and turning it into something structured, usable, and reliable.
-
----
-
-## ⚡ What I'm Into
-
-<table>
+<table width="100%">
 <tr>
 <td width="33%" align="center">
 
-### 🧠 AI / ML
-OCR<br/>
-NLP & Transformers<br/>
-RAG<br/>
-Computer Vision<br/>
-Classification<br/>
-Anomaly Detection
+**AI / ML**
+`OCR` `NLP` `RAG` `Computer Vision`
 
 </td>
 <td width="33%" align="center">
 
-### ⚙️ Backend
-FastAPI<br/>
-REST APIs<br/>
-PostgreSQL<br/>
-Redis<br/>
-Vector Search<br/>
-Data Pipelines
+**Backend**
+`APIs` `Pipelines` `Databases` `Auth`
 
 </td>
 <td width="33%" align="center">
 
-### 🛠️ Software
-Next.js<br/>
-React<br/>
-TypeScript<br/>
-Python<br/>
-Java / C++ / C#<br/>
-Git & Testing
+**Full-Stack**
+`React` `Next.js` `TypeScript` `Systems`
 
 </td>
 </tr>
 </table>
 
----
+## Currently
 
-## 🧰 Tech Stack
+```
+InvoicePilot   ->  AI invoice processing platform: OCR, validation, anomaly detection
+CaseVault      ->  Privacy-first legal research workspace, GraphRAG over case law
+Fumak          ->  Inventory + POS system running in a live retail business
+Ledgercross    ->  Software Developer Trainee: APIs, async processing, data layers
+```
+
+## Selected Projects
+
+**InvoicePilot** · `production`
+AI-powered invoice processing platform. An 11-stage pipeline extracts, validates, and normalizes invoice data via OCR, then flags duplicates and anomalies before it reaches the API.
+`React` `Fastify` `FastAPI` `PostgreSQL` `BullMQ`
+
+**CaseVault** · `production`
+Privacy-first legal research workspace for Bangladeshi case law. Ingests case documents and ranks results with GraphRAG over a knowledge graph, backed by dedicated vector and graph stores.
+`GraphRAG` `Neo4j` `Qdrant` `FastAPI` `LLMs`
+
+**[Fumak Inventory Management](https://github.com/Saji-d/fumak-inventory)** · `production`
+Inventory and point-of-sale system running in an active retail business, with barcode scanning across a native Android app and a web admin console.
+`Kotlin` `Jetpack Compose` `Next.js` `Neon PostgreSQL` `Prisma`
+
+**[LedgerTurf](https://github.com/Saji-d/ledgerturf)** · [`live`](https://ledgerturf.vercel.app)
+Real-time turf booking platform. Players discover and reserve grounds on a map, backed by geospatial queries over MongoDB's 2dsphere indexes.
+`Next.js` `TypeScript` `Mapbox` `MongoDB`
+
+**[FinBERT Financial Sentiment](https://github.com/Saji-d/financial-sentiment-analysis-bert)** · `NLP`
+Comparative study showing a domain-tuned transformer outperforms generic sentiment models on financial text.
+`BERT` `Transformers` `PyTorch`
+
+**[Face Recognition System](https://github.com/Saji-d/face-recognition-system)** · `computer vision`
+Real-time face identification pipeline: detects faces in video, trains embeddings, and matches identities against a known set.
+`Python` `OpenCV` `FaceNet`
+
+## Research
+
+**[Neuro-Screen](https://github.com/Saji-d/neuro-screen)** · hybrid CatBoost + ANN ensemble for cognitive-impairment risk screening in insomniac university students. 2,237 survey responses, 95.2% accuracy, 0.982 ROC-AUC.
+
+**Explainable Bangla Toxic Comment Detection** · BanglaBERT fine-tuned for toxicity detection in Bengali text, IEEE-format paper. 86% accuracy, 0.91 ROC-AUC, 5-fold cross-validation.
+
+**Early Warning Model for High-Value Customer Drop-Off** · RFM feature engineering, K-Means segmentation, and Random Forest on the UCI Online Retail dataset. 0.79 ROC-AUC across a 4,338-customer base.
+
+## Tech Stack
 
 <div align="center">
 
-### Languages
-<img src="https://skillicons.dev/icons?i=python,java,cpp,cs,js,ts&theme=dark" />
+**Languages**
 
-### AI / Data
-<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,sklearn&theme=dark" />
+<img src="https://skillicons.dev/icons?i=python,ts,js,java,cpp,cs&theme=dark" alt="Python, TypeScript, JavaScript, Java, C++, C#" height="48">
 
-<br/>
+**AI / ML**
 
-<img src="https://img.shields.io/badge/NumPy-0B2024?style=for-the-badge&logo=numpy&logoColor=4DABF7"/>
-<img src="https://img.shields.io/badge/Pandas-0B2024?style=for-the-badge&logo=pandas&logoColor=70E1D7"/>
-<img src="https://img.shields.io/badge/Transformers-0B2024?style=for-the-badge&logo=huggingface&logoColor=FFD21F"/>
-<img src="https://img.shields.io/badge/CatBoost-0B2024?style=for-the-badge&logoColor=70E1D7"/>
+<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,sklearn&theme=dark" alt="PyTorch, TensorFlow, OpenCV, scikit-learn" height="48">
 
-### Web & Backend
-<img src="https://skillicons.dev/icons?i=nextjs,react,tailwind,fastapi,nodejs,express&theme=dark" />
+**Systems, Data & Web3**
 
-### Databases & Infrastructure
-<img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,mongodb,redis,docker,git,github,vercel&theme=dark" />
+<img src="https://skillicons.dev/icons?i=fastapi,nextjs,react,postgres,mongodb,redis,docker,git,prisma,supabase,solidity&theme=dark" alt="FastAPI, Next.js, React, PostgreSQL, MongoDB, Redis, Docker, Git, Prisma, Supabase, Solidity" height="48">
 
-### Tools
-<img src="https://skillicons.dev/icons?i=jupyter,visualstudio,linux&theme=dark" />
+**Also**
+
+<img src="https://img.shields.io/badge/Transformers-0B0E1A?style=for-the-badge&logo=huggingface&logoColor=FFD21E" alt="Transformers" height="32">
+<img src="https://img.shields.io/badge/Pandas-0B0E1A?style=for-the-badge&logo=pandas&logoColor=FFFFFF" alt="Pandas" height="32">
+<img src="https://img.shields.io/badge/Neo4j-0B0E1A?style=for-the-badge&logo=neo4j&logoColor=4581C3" alt="Neo4j" height="32">
+<img src="https://img.shields.io/badge/Qdrant-0B0E1A?style=for-the-badge&logo=qdrant&logoColor=DC244C" alt="Qdrant" height="32">
+<img src="https://img.shields.io/badge/Kotlin-0B0E1A?style=for-the-badge&logo=kotlin&logoColor=7F52FF" alt="Kotlin" height="32">
+<img src="https://img.shields.io/badge/Jetpack%20Compose-0B0E1A?style=for-the-badge&logo=jetpackcompose&logoColor=4285F4" alt="Jetpack Compose" height="32">
+<img src="https://img.shields.io/badge/Mapbox-0B0E1A?style=for-the-badge&logo=mapbox&logoColor=FFFFFF" alt="Mapbox" height="32">
+<img src="https://img.shields.io/badge/OpenZeppelin-0B0E1A?style=for-the-badge&logo=openzeppelin&logoColor=4E5EE4" alt="OpenZeppelin" height="32">
 
 </div>
 
----
+## GitHub Analytics
 
-## 🚀 Things I'm Building
+<div align="center">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Saji-d&theme=github_dark&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&icon_color=9b8cfa&border_color=1c2030" width="100%" alt="GitHub profile summary">
+</div>
 
-<table>
+<table width="100%">
 <tr>
-<td width="50%" valign="top">
-
-### 🧾 InvoicePilot
-
-**AI invoice processing backend**
-
-A provider-agnostic pipeline for turning invoice documents into structured, validated data.
-
-`OCR` `FastAPI` `Pydantic` `Python`
-
-**Pipeline**
-
-`Upload → OCR → Transform → Normalize → Validate → Detect → API`
-
+<td width="50%">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Saji-d&theme=github_dark&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&icon_color=9b8cfa&border_color=1c2030" width="100%" alt="GitHub stats">
 </td>
-<td width="50%" valign="top">
-
-### ⚖️ CaseVault
-
-**AI-ready legal intelligence platform**
-
-A Bangladesh-focused legal intelligence system combining document processing, RAG, semantic retrieval, and structured legal knowledge.
-
-`Next.js` `FastAPI` `PostgreSQL` `Qdrant` `Neo4j`
-
+<td width="50%">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Saji-d&theme=github_dark&utcOffset=6&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&border_color=1c2030&chart_color=8b7cf6" width="100%" alt="Most productive commit hours">
 </td>
 </tr>
-
 <tr>
-<td width="50%" valign="top">
-
-### 🧠 Neuro-Screen
-
-**Hybrid ML + deep learning research**
-
-A thesis project exploring a hybrid ensemble framework for cognitive impairment detection in university students experiencing insomnia.
-
-`CatBoost` `ANN` `ML` `Deep Learning`
-
+<td width="50%">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Saji-d&theme=github_dark&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&border_color=1c2030" width="100%" alt="Top languages by repo">
 </td>
-<td width="50%" valign="top">
-
-### 📊 Customer Drop-Off Model
-
-**Predictive analytics research**
-
-An early-warning model for high-value customer drop-off using RFM features, K-Means segmentation, and Random Forest classification.
-
-`RFM` `K-Means` `Random Forest`
-
+<td width="50%">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Saji-d&theme=github_dark&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&border_color=1c2030" width="100%" alt="Top languages by commit">
 </td>
 </tr>
 </table>
 
----
-
-## 🔬 Research
-
-### Early Warning Model for High-Value Customer Drop-Off Using Segmentation in Online Retail
-
-- UCI Online Retail dataset
-- RFM feature engineering
-- K-Means customer segmentation
-- Random Forest classification
-- ROC-AUC ≈ **0.79**
-
-### Neuro-Screen
-
-- Hybrid machine learning + deep learning ensemble
-- CatBoost + ANN
-- Feature engineering and model evaluation
-- Research-focused thesis project
-
----
-
-## 🏆 A Few Numbers That Matter
-
 <div align="center">
-
-<img src="https://img.shields.io/badge/CGPA-3.92%20%2F%204.00-0D6B69?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Dean's%20Awards-5x-0D6B69?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Merit%20Scholarship-Up%20to%2070%25-0D6B69?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Software%20Building-2%2B%20Years-0D6B69?style=for-the-badge"/>
-
-</div>
+<img src="https://streak-stats.demolab.com/?user=Saji-d&background=0B0E1A&ring=9B8CFA&fire=9B8CFA&currStreakLabel=9B8CFA&sideLabels=5B6272&currStreakNum=EEF0FA&sideNums=EEF0FA&dates=5B6272&stroke=1C2030&hide_border=true" width="100%" alt="GitHub streak stats">
 
 <br/>
 
-> **2+ years building software independently** across web applications, backend systems, AI/ML projects, research, and personal products.
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Saji-d&bg_color=0b0e1a&color=5b6272&line=8b7cf6&point=eef0fa&area=true&area_color=8b7cf6&title_color=9b8cfa&hide_border=true&custom_title=GitHub%20Activity" width="100%" alt="GitHub activity graph">
+</div>
+
+## Experience
+
+**Ledgercross** · Software Developer Trainee · May 2026 – Present
+Production software across the stack for enterprise finance: REST APIs, async processing, multi-tenant data layers, automated testing, and cloud infrastructure.
+
+**Bangladesh Software Solution** · Software Engineering Intern · Feb 2026 – Apr 2026
+Built and shipped responsive web applications, integrating frontend features with RESTful APIs.
+
+## Education
+
+**BSc, Computer Science & Engineering** · American International University-Bangladesh · 2022 – 2026
+`CGPA 3.92 / 4.00` `5x Dean's Award` `Merit Scholarship, up to 70%`
 
 ---
-
-## 🔭 Currently
-
-```text
-Building       → InvoicePilot
-Architecting   → CaseVault
-Researching    → Neuro-Screen
-Improving      → Backend + AI/ML engineering
-Exploring      → Computer Vision, RAG & intelligent systems
-```
-
----
-
-## 📊 GitHub Activity
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Saji-d&show_icons=true&hide_border=true&rank_icon=github&bg_color=071216&title_color=70E1D7&icon_color=70E1D7&text_color=D9EEEE" width="49%" alt="GitHub statistics"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Saji-d&layout=compact&hide_border=true&bg_color=071216&title_color=70E1D7&text_color=D9EEEE" width="41%" alt="Top languages"/>
-
-<br/><br/>
-
-<img src="https://streak-stats.demolab.com?user=Saji-d&hide_border=true&background=071216&ring=70E1D7&fire=70E1D7&currStreakLabel=70E1D7&sideLabels=70E1D7&currStreakNum=E8FFFF&sideNums=E8FFFF&dates=6C8588&stroke=0B2B31" width="80%" alt="GitHub streak"/>
-
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Saji-d&bg_color=071216&color=70E1D7&line=0D6B69&point=E8FFFF&area=true&hide_border=true" width="96%" alt="GitHub activity graph"/>
-
-</div>
-
----
-
-## 🧩 How I Like to Work
-
-```text
-01  Understand the problem
-02  Design the system
-03  Build the smallest useful version
-04  Test the important paths
-05  Measure what matters
-06  Polish the experience
-07  Ship
+```
+$ availability
 ```
 
-I don't want my work to stop at **"the model works"** or **"the API responds."**
+Open to full-stack, platform, and applied ML roles, plus select freelance and product work.
 
-The goal is a complete system that is understandable, maintainable, and actually useful.
-
----
-
-## 🌐 Find Me
-
-<div align="center">
-
-<a href="https://sajidur.me">
-  <img src="https://img.shields.io/badge/Portfolio-0D6B69?style=for-the-badge&logo=googlechrome&logoColor=E8FFFF"/>
-</a>
-<a href="https://github.com/Saji-d?tab=repositories">
-  <img src="https://img.shields.io/badge/Repositories-0B2024?style=for-the-badge&logo=github&logoColor=70E1D7"/>
-</a>
-
-<br/><br/>
-
-**Software Engineering · Backend · AI/ML · Computer Vision**
+[`Portfolio`](https://sajidur.me) · [`GitHub`](https://github.com/Saji-d) · [`LinkedIn`](https://www.linkedin.com/in/sajidur-rahman-sajid/) · [`Email`](mailto:sajidsajidurrahman99@gmail.com)
 
 </div>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:071216,50:0B2B31,100:0D6B69" width="100%"/>
