@@ -140,24 +140,11 @@ Real-time face identification pipeline: detects faces in video, trains embedding
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Saji-d&theme=github_dark&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&icon_color=9b8cfa&border_color=1c2030" width="100%" alt="GitHub profile summary">
 </div>
 
-<table width="100%">
-<tr>
-<td width="50%">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Saji-d&theme=github_dark&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&icon_color=9b8cfa&border_color=1c2030" width="100%" alt="GitHub stats">
-</td>
-<td width="50%">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Saji-d&theme=github_dark&utcOffset=6&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&border_color=1c2030&chart_color=8b7cf6" width="100%" alt="Most productive commit hours">
-</td>
-</tr>
-<tr>
-<td width="50%">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Saji-d&theme=github_dark&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&border_color=1c2030" width="100%" alt="Top languages by repo">
-</td>
-<td width="50%">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Saji-d&theme=github_dark&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&border_color=1c2030" width="100%" alt="Top languages by commit">
-</td>
-</tr>
-</table>
+<div align="center">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Saji-d&theme=github_dark&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&icon_color=9b8cfa&border_color=1c2030" width="49%" alt="GitHub stats"><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Saji-d&theme=github_dark&utcOffset=6&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&border_color=1c2030&chart_color=8b7cf6" width="49%" alt="Most productive commit hours">
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Saji-d&theme=github_dark&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&border_color=1c2030" width="49%" alt="Top languages by repo"><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Saji-d&theme=github_dark&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&border_color=1c2030" width="49%" alt="Top languages by commit">
+</div>
 
 <div align="center">
 <img src="./assets/github-streak.svg" width="100%" alt="GitHub streak stats">
