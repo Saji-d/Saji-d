@@ -6,7 +6,7 @@
   <img src="assets/banner-dark.svg" alt="Sajidur Rahman Sajid, Software Engineer | Backend | AI/ML" width="100%">
 </picture>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=1000&color=9B8CFA&center=true&vCenter=true&width=780&lines=Software+Developer+Trainee+%40+Ledgercross;Building+InvoicePilot%3A+AI+invoice+processing;GraphRAG+legal+research+%40+CaseVault;BSc+CSE%2C+AIUB+(3.92+%2F+4.00+CGPA);Open+to+Full-Stack%2C+AI%2FML+%26+Research+roles" alt="Software Developer Trainee at Ledgercross, building InvoicePilot and CaseVault, BSc CSE at AIUB, open to full-stack, AI/ML and research roles" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=1000&color=9B8CFA&center=true&vCenter=true&width=780&lines=Software+Developer+Trainee+%40+Ledgercross;Building+InvoicePilot%3A+AI+invoice+processing;Legal+document+search+%40+CaseVault;BSc+CSE%2C+AIUB+(3.92+%2F+4.00+CGPA);Open+to+Full-Stack%2C+AI%2FML+%26+Research+roles" alt="Software Developer Trainee at Ledgercross, building InvoicePilot and CaseVault, BSc CSE at AIUB, open to full-stack, AI/ML and research roles" />
 
 <br/>
 
@@ -66,36 +66,36 @@ I build full-stack software and production-oriented AI/ML systems, from data pip
 
 ```
 InvoicePilot   ->  AI invoice processing platform: OCR, validation, anomaly detection
-CaseVault      ->  Privacy-first legal research workspace, GraphRAG over case law
+CaseVault      ->  Privacy-first legal research workspace, keyword search over case law
 Fumak          ->  Inventory + POS system running in a live retail business
-Ledgercross    ->  Software Developer Trainee: APIs, async processing, data layers
+Ledgercross    ->  Software Developer Trainee: AI services, APIs, async processing
 ```
 
 ## Selected Projects
 
 **InvoicePilot** · `production`
-AI-powered invoice processing platform. An 11-stage pipeline extracts, validates, and normalizes invoice data via OCR, then flags duplicates and anomalies before it reaches the API.
-`React` `Fastify` `FastAPI` `PostgreSQL` `BullMQ`
+AI-powered invoice processing platform, built by a team at Ledgercross. My part is the AI extraction service: an 11-stage pipeline that extracts, validates, and normalizes invoice data via OCR, then flags duplicates and anomalies before it reaches the API.
+`FastAPI` `Python` `Mindee OCR` `PostgreSQL` `Redis Streams`
 
 **CaseVault** · `production`
-Privacy-first legal research workspace for Bangladeshi case law. Ingests case documents and ranks results with GraphRAG over a knowledge graph, backed by dedicated vector and graph stores.
-`GraphRAG` `Neo4j` `Qdrant` `FastAPI` `LLMs`
+Privacy-first legal research workspace for Bangladeshi case law. Ingests legal documents and ranks keyword search results by relevance; a GraphRAG layer (Qdrant vector search + Neo4j knowledge graph) is designed for Phase 2.
+`FastAPI` `SQLAlchemy` `SQLite` `Next.js`
 
 **[Fumak Inventory Management](https://github.com/Saji-d/fumak-inventory)** · `production`
 Inventory and point-of-sale system running in an active retail business, with barcode scanning across a native Android app and a web admin console.
 `Kotlin` `Jetpack Compose` `Next.js` `Neon PostgreSQL` `Prisma`
 
 **[LedgerTurf](https://github.com/Saji-d/ledgerturf)** · [`live`](https://ledgerturf.vercel.app)
-Real-time turf booking platform. Players discover and reserve grounds on a map, backed by geospatial queries over MongoDB's 2dsphere indexes.
-`Next.js` `TypeScript` `Mapbox` `MongoDB`
+Turf booking platform. Players discover and reserve grounds on a Google Map; turf locations carry a MongoDB 2dsphere index.
+`React` `Express` `MongoDB` `Google Maps`
 
 **[FinBERT Financial Sentiment](https://github.com/Saji-d/financial-sentiment-analysis-bert)** · `NLP`
 Comparative study showing a domain-tuned transformer outperforms generic sentiment models on financial text.
 `BERT` `Transformers` `PyTorch`
 
 **[Face Recognition System](https://github.com/Saji-d/face-recognition-system)** · `computer vision`
-Real-time face identification pipeline: detects faces in video, trains embeddings, and matches identities against a known set.
-`Python` `OpenCV` `FaceNet`
+Classical face recognition with OpenCV: detects faces with a Haar cascade, trains an LBPH recognizer per identity, and recognizes known faces.
+`Python` `OpenCV` `LBPH`
 
 ## Research
 
@@ -103,7 +103,7 @@ Real-time face identification pipeline: detects faces in video, trains embedding
 
 **Explainable Bangla Toxic Comment Detection** · BanglaBERT fine-tuned for toxicity detection in Bengali text, IEEE-format paper. 86% accuracy, 0.91 ROC-AUC, 5-fold cross-validation.
 
-**Early Warning Model for High-Value Customer Drop-Off** · RFM feature engineering, K-Means segmentation, and Random Forest on the UCI Online Retail dataset. 0.79 ROC-AUC across a 4,338-customer base.
+**Early Warning Model for High-Value Customer Drop-Off** · RFM feature engineering, K-Means segmentation, and Random Forest on the UCI Online Retail dataset. Segments 4,338 customers; the early-risk model reaches 0.79 ROC-AUC on the 776 high-value customers.
 
 ## Tech Stack
 
@@ -125,12 +125,8 @@ Real-time face identification pipeline: detects faces in video, trains embedding
 
 <img src="https://img.shields.io/badge/Transformers-0B0E1A?style=for-the-badge&logo=huggingface&logoColor=FFD21E" alt="Transformers" height="32">
 <img src="https://img.shields.io/badge/Pandas-0B0E1A?style=for-the-badge&logo=pandas&logoColor=FFFFFF" alt="Pandas" height="32">
-<img src="https://img.shields.io/badge/Neo4j-0B0E1A?style=for-the-badge&logo=neo4j&logoColor=4581C3" alt="Neo4j" height="32">
-<img src="https://img.shields.io/badge/Qdrant-0B0E1A?style=for-the-badge&logo=qdrant&logoColor=DC244C" alt="Qdrant" height="32">
 <img src="https://img.shields.io/badge/Kotlin-0B0E1A?style=for-the-badge&logo=kotlin&logoColor=7F52FF" alt="Kotlin" height="32">
 <img src="https://img.shields.io/badge/Jetpack%20Compose-0B0E1A?style=for-the-badge&logo=jetpackcompose&logoColor=4285F4" alt="Jetpack Compose" height="32">
-<img src="https://img.shields.io/badge/Mapbox-0B0E1A?style=for-the-badge&logo=mapbox&logoColor=FFFFFF" alt="Mapbox" height="32">
-<img src="https://img.shields.io/badge/OpenZeppelin-0B0E1A?style=for-the-badge&logo=openzeppelin&logoColor=4E5EE4" alt="OpenZeppelin" height="32">
 
 </div>
 
@@ -157,10 +153,10 @@ Real-time face identification pipeline: detects faces in video, trains embedding
 ## Experience
 
 **Ledgercross** · Software Developer Trainee · May 2026 – Present
-Production software across the stack for enterprise finance: REST APIs, async processing, multi-tenant data layers, automated testing, and cloud infrastructure.
+Production software across the stack for enterprise finance: REST APIs, async processing, automated testing, and cloud infrastructure.
 
 **Bangladesh Software Solution** · Software Engineering Intern · Feb 2026 – Apr 2026
-Built and shipped responsive web applications, integrating frontend features with RESTful APIs.
+Developed responsive frontend interfaces with HTML5, CSS3, and JavaScript, integrated with RESTful APIs.
 
 ## Education
 
