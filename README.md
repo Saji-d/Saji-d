@@ -6,7 +6,7 @@
   <img src="assets/banner-dark.svg" alt="Sajidur Rahman Sajid, Software Engineer | Backend | AI/ML" width="100%">
 </picture>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=1000&color=9B8CFA&center=true&vCenter=true&width=780&lines=Software+Developer+Trainee+%40+Ledgercross;Building+InvoicePilot%3A+AI+invoice+processing;Legal+document+search+%40+CaseVault;BSc+CSE%2C+AIUB+(3.91+%2F+4.00+CGPA);Open+to+Full-Stack%2C+AI%2FML+%26+Research+roles" alt="Software Developer Trainee at Ledgercross, building InvoicePilot and CaseVault, BSc CSE at AIUB, open to full-stack, AI/ML and research roles" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=1000&color=9B8CFA&center=true&vCenter=true&width=780&lines=Software+Developer+Trainee+%40+Ledgercross;Building+InvoicePilot%3A+AI+invoice+processing;BSc+CSE%2C+AIUB+(3.91+%2F+4.00+CGPA);Open+to+Full-Stack%2C+AI%2FML+%26+Research+roles" alt="Software Developer Trainee at Ledgercross, building InvoicePilot, BSc CSE at AIUB, open to full-stack, AI/ML and research roles" />
 
 <br/>
 
@@ -66,7 +66,6 @@ I build full-stack software and production-oriented AI/ML systems, from data pip
 
 ```
 InvoicePilot   ->  AI invoice processing platform: OCR, validation, anomaly detection
-CaseVault      ->  Privacy-first legal research workspace, keyword search over case law
 Fumak          ->  Inventory + POS system running in a live retail business
 Ledgercross    ->  Software Developer Trainee: AI services, APIs, async processing
 ```
@@ -76,10 +75,6 @@ Ledgercross    ->  Software Developer Trainee: AI services, APIs, async processi
 **InvoicePilot** · `production`
 AI-powered invoice processing platform, built by a team at Ledgercross. My part is the AI extraction service: an 11-stage pipeline that extracts, validates, and normalizes invoice data via OCR, then flags duplicates and anomalies before it reaches the API.
 `FastAPI` `Python` `Mindee OCR` `PostgreSQL` `Redis Streams`
-
-**CaseVault** · `production`
-Privacy-first legal research workspace for Bangladeshi case law. Ingests legal documents and ranks keyword search results by relevance; a GraphRAG layer (Qdrant vector search + Neo4j knowledge graph) is designed for Phase 2.
-`FastAPI` `SQLAlchemy` `SQLite` `Next.js`
 
 **[Fumak Inventory Management](https://github.com/Saji-d/fumak-inventory)** · `production`
 Inventory and point-of-sale system running in an active retail business, with barcode scanning across a native Android app and a web admin console.
