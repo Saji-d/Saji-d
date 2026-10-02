@@ -147,7 +147,7 @@ Classical face recognition with OpenCV: detects faces with a Haar cascade, train
 
 ## Experience
 
-**Ledgercross** · Software Developer Trainee · May 2026 – Present
+**Ledgercross** · Software Developer · May 2026 – Present
 Production software across the stack for enterprise finance: REST APIs, async processing, automated testing, and cloud infrastructure.
 
 **Bangladesh Software Solution** · Software Engineering Intern · Feb 2026 – Apr 2026
