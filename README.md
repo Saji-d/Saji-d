@@ -6,7 +6,7 @@
   <img src="assets/banner-dark.svg" alt="Sajidur Rahman Sajid, Software Engineer | Backend | AI/ML" width="100%">
 </picture>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=1000&color=9B8CFA&center=true&vCenter=true&width=780&lines=Software+Engineer+Intern+%40+Ledgercross;Building+InvoicePilot%3A+AI+invoice+processing;BSc+CSE%2C+AIUB+(3.91+%2F+4.00+CGPA);Open+to+Full-Stack%2C+AI%2FML+%26+Research+roles" alt="Software Engineer Intern at Ledgercross, building InvoicePilot, BSc CSE at AIUB, open to full-stack, AI/ML and research roles" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=1000&color=9B8CFA&center=true&vCenter=true&width=780&lines=Software+Developer+%40+Ledgercross;Building+InvoicePilot%3A+AI+invoice+processing;BSc+CSE%2C+AIUB+(3.91+%2F+4.00+CGPA);Open+to+Full-Stack%2C+AI%2FML+%26+Research+roles" alt="Software Developer at Ledgercross, building InvoicePilot, BSc CSE at AIUB, open to full-stack, AI/ML and research roles" />
 
 <br/>
 
@@ -30,7 +30,7 @@ $ whoami
 ```
 
 ```python
-role      = "Software Engineer Intern @ Ledgercross"
+role      = "Software Developer @ Ledgercross"
 focus     = ["Full-Stack Engineering", "Applied AI/ML", "Backend Systems"]
 education = "BSc CSE, AIUB (3.91 / 4.00)"
 ```
@@ -67,7 +67,7 @@ I build full-stack software and production-oriented AI/ML systems, from data pip
 ```
 InvoicePilot   ->  AI invoice processing platform: OCR, validation, anomaly detection
 Fumak          ->  Inventory + POS system running in a live retail business
-Ledgercross    ->  Software Engineer Intern: AI services, APIs, async processing
+Ledgercross    ->  Software Developer: AI services, APIs, async processing
 ```
 
 ## Selected Projects
@@ -147,7 +147,7 @@ Classical face recognition with OpenCV: detects faces with a Haar cascade, train
 
 ## Experience
 
-**Ledgercross** · Software Engineer Intern · May 2026 – Present
+**Ledgercross** · Software Developer · May 2026 – Present
 Production software across the stack for enterprise finance: REST APIs, async processing, automated testing, and cloud infrastructure.
 
 **BSS** · Software Engineer Intern · Feb 2026 – Apr 2026
