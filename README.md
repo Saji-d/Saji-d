@@ -6,16 +6,22 @@
   <img src="assets/banner-dark.svg" alt="Sajidur Rahman Sajid, Software Engineer | Backend | AI/ML" width="100%">
 </picture>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=1000&color=9B8CFA&center=true&vCenter=true&width=780&height=40&lines=Full-Stack+Developer+%40+2BitSoft+(Dubai)+%26+RemoteIntegrity;Building+VoiceCon%3A+realtime+AI+voice+calling;BSc+CSE%2C+AIUB+(3.91+%2F+4.00+CGPA);Open+to+Full-Stack%2C+AI%2FML+%26+Research+roles" alt="Full-Stack Developer at 2BitSoft and RemoteIntegrity, building VoiceCon, BSc CSE at AIUB, open to full-stack, AI/ML and research roles" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=1000&color=9B8CFA&center=true&vCenter=true&width=780&height=40&lines=Full-Stack+Developer+%40+2BitSoft+(Dubai)+%26+RemoteIntegrity+(USA);Building+VoiceCon%3A+realtime+AI+voice+calling;BSc+CSE%2C+AIUB+(3.91+%2F+4.00+CGPA);Open+to+Full-Stack%2C+AI%2FML+%26+Research+roles" alt="Full-Stack Developer at 2BitSoft (Dubai) and RemoteIntegrity (USA), building VoiceCon, BSc CSE at AIUB, open to full-stack, AI/ML and research roles" />
 
+<p align="center">
 <a href="mailto:sajidsajidurrahman99@gmail.com"><img src="https://img.shields.io/badge/OPEN%20TO%20WORK-Full%20Stack%2C%20Applied%20ML%2C%20Research-8B7CF6?style=for-the-badge&labelColor=0B0E1A" alt="Open to work"/></a>
-<br/>
+</p>
+
+<p align="center">
 <a href="https://sajidur.me"><img src="https://img.shields.io/badge/Portfolio-0B0E1A?style=for-the-badge&logo=googlechrome&logoColor=9B8CFA" alt="Portfolio"/></a>
 <a href="https://github.com/Saji-d"><img src="https://img.shields.io/badge/GitHub-0B0E1A?style=for-the-badge&logo=github&logoColor=EEF0FA" alt="GitHub"/></a>
 <a href="https://www.linkedin.com/in/sajidur-rahman-sajid/"><img src="https://img.shields.io/badge/LinkedIn-0B0E1A?style=for-the-badge&logo=linkedin&logoColor=8B7CF6" alt="LinkedIn"/></a>
 <a href="mailto:sajidsajidurrahman99@gmail.com"><img src="https://img.shields.io/badge/Email-0B0E1A?style=for-the-badge&logo=gmail&logoColor=9B8CFA" alt="Email"/></a>
-<br/>
+</p>
+
+<p align="center">
 <img src="https://komarev.com/ghpvc/?username=Saji-d&style=for-the-badge&color=8B7CF6&labelColor=0B0E1A&label=VISITORS" alt="Profile visitors"/>
+</p>
 
 </div>
 
@@ -26,7 +32,7 @@
 ```python
 class Sajid:
     role      = "Full-Stack Developer"
-    now       = ["2BitSoft · Dubai, UAE", "RemoteIntegrity · USA (contract)"]
+    now       = ["2BitSoft (Dubai)", "RemoteIntegrity (USA, contract)"]
     building  = "VoiceCon: realtime AI voice calling"
     focus     = ["Full-Stack Engineering", "Applied AI/ML", "Backend Systems"]
     education = "BSc CSE, AIUB (3.91 / 4.00)"
@@ -67,20 +73,34 @@ I build full-stack software and production-oriented AI/ML systems, from data pip
 
 <img src="./assets/divider.svg" width="100%" alt="">
 
-## `> currently`
+<h2 align="center"><code>> currently</code></h2>
 
-```text
-┌─ WORKING WITH ───────────────────────────────────────────────────────────┐
-│  2BitSoft          Full-Stack Developer   Dubai, UAE        since Oct 2026 │
-│  RemoteIntegrity   Full-Stack Developer   USA · contract    since Oct 2026 │
-└──────────────────────────────────────────────────────────────────────────┘
-┌─ BUILDING ───────────────────────────────────────────────────────────────┐
-│  VoiceCon   Android-first AI voice calling with realtime voice           │
-│             conversion: Kotlin app, Fastify + Prisma API, Twilio         │
-│             media streams, Seed-VC on GPU                                │
-│  Fumak      Inventory + POS system running in a live retail business     │
-└──────────────────────────────────────────────────────────────────────────┘
-```
+<table align="center">
+<tr>
+<td align="center" valign="top" width="50%">
+
+**◈ WORKING WITH**
+<br/>
+**2BitSoft** · Dubai, UAE
+Full-Stack Developer · since Oct 2026
+<br/>
+**RemoteIntegrity** · USA
+Full-Stack Developer (contract) · since Oct 2026
+
+</td>
+<td align="center" valign="top" width="50%">
+
+**◈ BUILDING & SHIPPED**
+<br/>
+**VoiceCon**
+Realtime AI voice calling: Kotlin app, Fastify + Prisma API, Twilio media streams, Seed-VC on GPU
+<br/>
+**InvoicePilot**
+AI invoice processing: OCR, validation, duplicate and anomaly detection
+
+</td>
+</tr>
+</table>
 
 <img src="./assets/divider.svg" width="100%" alt="">
 
@@ -171,16 +191,16 @@ Comparative study showing a domain-tuned transformer outperforms generic sentime
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Saji-d&bg_color=0b0e1a&color=5b6272&line=8b7cf6&point=eef0fa&area=true&area_color=8b7cf6&title_color=9b8cfa&hide_border=true&custom_title=GitHub%20Activity" width="100%" alt="GitHub activity graph">
+<img src="https://raw.githubusercontent.com/Saji-d/Saji-d/output/github-snake-dark.svg" width="100%" alt="GitHub contribution snake">
 </div>
 
 ## `> experience`
 
 ```text
-2026 ─●─ 2BitSoft ·········· Full-Stack Developer ·········· Dubai, UAE ····· Oct 2026 – Present
-      ●─ RemoteIntegrity ··· Full-Stack (Contract) ·········· Florida, USA ··· Oct 2026 – Present
-      ●─ Ledgercross ······· Software Developer ············· Dhaka, BD ······· May 2026 – Sep 2026
-      ●─ BSS ··············· Software Engineer Intern ······· Dhaka, BD ······· Feb 2026 – Apr 2026
+2026 ─●─ 2BitSoft ········· Full-Stack Developer ······ Dubai, UAE ···· Oct 2026 – Present
+      ●─ RemoteIntegrity ·· Full-Stack (Contract) ····· Florida, USA ·· Oct 2026 – Present
+      ●─ Ledgercross ······ Software Developer ········ Dhaka, BD ····· May 2026 – Sep 2026
+      ●─ BSS ·············· Software Engineer Intern ·· Dhaka, BD ····· Feb 2026 – Apr 2026
 ```
 
 **2BitSoft** · Full-stack web applications for software, automation, and digital transformation projects.
@@ -190,8 +210,40 @@ Comparative study showing a domain-tuned transformer outperforms generic sentime
 
 ## `> education`
 
-**BSc, Computer Science & Engineering** · American International University-Bangladesh · 2022 – 2026
-`CGPA 3.91 / 4.00` `5x Dean's Award` `Merit Scholarship, up to 70%`
+<table width="100%">
+<tr>
+<td colspan="3" align="center">
+
+**BSc in Computer Science & Engineering**
+<br/>
+American International University-Bangladesh · 2022 – 2026
+
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+
+**3.91 / 4.00**
+<br/>
+`CGPA`
+
+</td>
+<td align="center" width="33%">
+
+**5×**
+<br/>
+`Dean's Award`
+
+</td>
+<td align="center" width="33%">
+
+**Up to 70%**
+<br/>
+`Merit Scholarship`
+
+</td>
+</tr>
+</table>
 
 <img src="./assets/divider.svg" width="100%" alt="">
 
