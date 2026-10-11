@@ -190,11 +190,6 @@ Comparative study showing a domain-tuned transformer outperforms generic sentime
       ●─ BSS ·············· Software Engineer Intern ·· Dhaka, BD ····· Feb 2026 – Apr 2026
 ```
 
-**2BitSoft** · Full-stack web applications for software, automation, and digital transformation projects.
-**RemoteIntegrity LLC** · Front-end and back-end web application work: server-side logic, APIs, database integrations, testing, and deployment.
-**Ledgercross** · Production software across the stack for enterprise finance: REST APIs, async processing, automated testing, and cloud infrastructure.
-**BSS** · Responsive frontend interfaces with HTML5, CSS3, and JavaScript, integrated with RESTful APIs.
-
 ## `> education`
 
 <img src="./assets/education.svg" width="100%" alt="BSc in Computer Science and Engineering at AIUB, 2022 to 2026. CGPA 3.91 out of 4.00, 5x Dean's Award, Merit Scholar with up to 70% tuition waiver, thesis NeuroScreen.">
