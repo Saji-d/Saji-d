@@ -1,0 +1,91 @@
+<svg width="1200" height="440" viewBox="0 0 1200 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BSc in Computer Science and Engineering, American International University-Bangladesh, 2022 to 2026. CGPA 3.91 out of 4.00. 5 times Dean's Award, Merit Scholar with up to 70 percent tuition waiver. Thesis NeuroScreen, 95.2 percent accuracy.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0e1a"/>
+      <stop offset="1" stop-color="#14122b"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#c084fc"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#8b7cf6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#8b7cf6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#fff" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="440" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="440" rx="18" fill="url(#grid)"/>
+  <rect x="0.75" y="0.75" width="1198.5" height="438.5" rx="17.5" fill="none" stroke="#8b7cf6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <circle cx="600" cy="170" r="190" fill="url(#glow)"/>
+
+  <g font-family="'JetBrains Mono','Fira Code',ui-monospace,'SFMono-Regular',Consolas,monospace">
+
+    <!-- LEFT: degree -->
+    <g transform="translate(56 54)">
+      <g transform="translate(0 0)" fill="none" stroke="url(#acc)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M0 18 L30 4 L60 18 L30 32 Z"/>
+        <path d="M12 25 V40 C12 46 22 50 30 50 C38 50 48 46 48 40 V25"/>
+        <path d="M60 18 V38"/>
+      </g>
+      <text x="0" y="96" font-size="13" fill="#8b7cf6" letter-spacing="4">EDUCATION</text>
+      <text x="0" y="132" font-size="25" font-weight="700" fill="#eef0fa">BSc in Computer</text>
+      <text x="0" y="162" font-size="25" font-weight="700" fill="#eef0fa">Science &amp; Engineering</text>
+      <text x="0" y="198" font-size="14.5" fill="#a9acd6">American International</text>
+      <text x="0" y="219" font-size="14.5" fill="#a9acd6">University-Bangladesh</text>
+      <text x="0" y="252" font-size="13" fill="#6b708f">Dhaka, Bangladesh</text>
+    </g>
+
+    <!-- CENTER: CGPA ring -->
+    <g transform="translate(600 168)">
+      <circle r="104" fill="none" stroke="#8b7cf6" stroke-opacity="0.12" stroke-width="1"/>
+      <circle r="84" fill="none" stroke="#1c2040" stroke-width="14"/>
+      <circle r="84" fill="none" stroke="url(#acc)" stroke-width="14" stroke-linecap="round"
+              stroke-dasharray="527.8" stroke-dashoffset="527.8" transform="rotate(-90)">
+        <animate attributeName="stroke-dashoffset" from="527.8" to="11.8" dur="2.4s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1" keyTimes="0;1"/>
+      </circle>
+      <text y="6" text-anchor="middle" font-size="46" font-weight="800" fill="#eef0fa">3.91</text>
+      <text y="34" text-anchor="middle" font-size="14" fill="#8b90b8" letter-spacing="3">/ 4.00 CGPA</text>
+    </g>
+
+    <!-- RIGHT: honors -->
+    <g transform="translate(850 58)">
+      <rect width="300" height="76" rx="14" fill="#12152a" stroke="#8b7cf6" stroke-opacity="0.45"/>
+      <text x="22" y="34" font-size="26" font-weight="800" fill="url(#acc)">5×</text>
+      <text x="74" y="31" font-size="16" font-weight="700" fill="#eef0fa">Dean's Award</text>
+      <text x="74" y="53" font-size="12" fill="#8b90b8">academic excellence</text>
+
+      <rect y="92" width="300" height="76" rx="14" fill="#12152a" stroke="#8b7cf6" stroke-opacity="0.45"/>
+      <text x="22" y="126" font-size="22" font-weight="800" fill="url(#acc)">70%</text>
+      <text x="74" y="123" font-size="16" font-weight="700" fill="#eef0fa">AIUB Merit Scholar</text>
+      <text x="74" y="145" font-size="12" fill="#8b90b8">tuition waiver, up to 70%</text>
+
+      <rect y="184" width="300" height="76" rx="14" fill="#12152a" stroke="#8b7cf6" stroke-opacity="0.45"/>
+      <text x="22" y="218" font-size="22" font-weight="800" fill="url(#acc)">95.2%</text>
+      <text x="104" y="215" font-size="16" font-weight="700" fill="#eef0fa">Thesis: NeuroScreen</text>
+      <text x="104" y="237" font-size="12" fill="#8b90b8">hybrid ensemble · 0.982 ROC-AUC</text>
+    </g>
+
+    <!-- BOTTOM: timeline -->
+    <g transform="translate(56 388)">
+      <text x="0" y="-10" font-size="12" fill="#6b708f" letter-spacing="3">SEP 2022</text>
+      <text x="1088" y="-10" text-anchor="end" font-size="12" fill="#6b708f" letter-spacing="3">APR 2026</text>
+      <rect y="0" width="1088" height="4" rx="2" fill="#1c2040"/>
+      <rect y="0" width="0" height="4" rx="2" fill="url(#acc)">
+        <animate attributeName="width" from="0" to="1088" dur="2.4s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1" keyTimes="0;1"/>
+      </rect>
+      <g fill="#0b0e1a" stroke="#c084fc" stroke-width="2.5">
+        <circle cx="2" cy="2" r="7"/>
+        <circle cx="1086" cy="2" r="7"/>
+      </g>
+      <g fill="#c084fc">
+        <circle cx="1086" cy="2" r="3"/>
+        <circle cx="2" cy="2" r="3"/>
+      </g>
+      <text x="544" y="34" text-anchor="middle" font-size="12.5" fill="#8b90b8">B.Sc. · Computer Science &amp; Engineering · completed</text>
+    </g>
+  </g>
+</svg>

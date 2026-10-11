@@ -3,7 +3,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img src="assets/banner-dark.svg" alt="Sajidur Rahman Sajid, Software Engineer | Backend | AI/ML" width="100%">
+  <img src="assets/banner-dark.svg" alt="Sajidur Rahman Sajid, Full-Stack Developer | AI/ML" width="100%">
 </picture>
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=1000&color=9B8CFA&center=true&vCenter=true&width=780&height=40&lines=Full-Stack+Developer+%40+2BitSoft+(Dubai)+%26+RemoteIntegrity+(USA);Building+VoiceCon%3A+realtime+AI+voice+calling;BSc+CSE%2C+AIUB+(3.91+%2F+4.00+CGPA);Open+to+Full-Stack%2C+AI%2FML+%26+Research+roles" alt="Full-Stack Developer at 2BitSoft (Dubai) and RemoteIntegrity (USA), building VoiceCon, BSc CSE at AIUB, open to full-stack, AI/ML and research roles" />
@@ -197,17 +197,7 @@ Comparative study showing a domain-tuned transformer outperforms generic sentime
 
 ## `> education`
 
-```text
-┌─ BSc · COMPUTER SCIENCE & ENGINEERING ────────────────────────────────┐
-│  American International University-Bangladesh                         │
-│                                                                       │
-│  2022 ────────────────────────●──────────────────────── 2026          │
-│                                                                       │
-│  CGPA   ███████████████████████████░   3.91 / 4.00                    │
-│                                                                       │
-│  5x Dean's Award   ·   AIUB Merit Scholar (up to 70% tuition waiver)  │
-└───────────────────────────────────────────────────────────────────────┘
-```
+<img src="./assets/education.svg" width="100%" alt="BSc in Computer Science and Engineering at AIUB, 2022 to 2026. CGPA 3.91 out of 4.00, 5x Dean's Award, Merit Scholar with up to 70% tuition waiver, thesis NeuroScreen.">
 
 <img src="./assets/divider.svg" width="100%" alt="">
 
