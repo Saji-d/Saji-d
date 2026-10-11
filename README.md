@@ -6,7 +6,7 @@
   <img src="assets/banner-dark.svg" alt="Sajidur Rahman Sajid, Software Engineer | Backend | AI/ML" width="100%">
 </picture>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=1000&color=9B8CFA&center=true&vCenter=true&width=780&lines=Software+Developer+%40+Ledgercross;Building+InvoicePilot%3A+AI+invoice+processing;BSc+CSE%2C+AIUB+(3.91+%2F+4.00+CGPA);Open+to+Full-Stack%2C+AI%2FML+%26+Research+roles" alt="Software Developer at Ledgercross, building InvoicePilot, BSc CSE at AIUB, open to full-stack, AI/ML and research roles" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=1000&color=9B8CFA&center=true&vCenter=true&width=780&lines=Full-Stack+Developer+%40+2BitSoft+%26+RemoteIntegrity;Building+InvoicePilot%3A+AI+invoice+processing;BSc+CSE%2C+AIUB+(3.91+%2F+4.00+CGPA);Open+to+Full-Stack%2C+AI%2FML+%26+Research+roles" alt="Full-Stack Developer at 2BitSoft and RemoteIntegrity, building InvoicePilot, BSc CSE at AIUB, open to full-stack, AI/ML and research roles" />
 
 <br/>
 
@@ -30,7 +30,7 @@ $ whoami
 ```
 
 ```python
-role      = "Software Developer @ Ledgercross"
+role      = "Full-Stack Developer @ 2BitSoft (Dubai) + RemoteIntegrity (contract)"
 focus     = ["Full-Stack Engineering", "Applied AI/ML", "Backend Systems"]
 education = "BSc CSE, AIUB (3.91 / 4.00)"
 ```
@@ -67,7 +67,8 @@ I build full-stack software and production-oriented AI/ML systems, from data pip
 ```
 InvoicePilot   ->  AI invoice processing platform: OCR, validation, anomaly detection
 Fumak          ->  Inventory + POS system running in a live retail business
-Ledgercross    ->  Software Developer: AI services, APIs, async processing
+2BitSoft       ->  Full-Stack Developer, Dubai, UAE
+RemoteIntegrity ->  Full-Stack Developer, contract, USA
 ```
 
 ## Selected Projects
@@ -147,10 +148,16 @@ Classical face recognition with OpenCV: detects faces with a Haar cascade, train
 
 ## Experience
 
-**Ledgercross** · Software Developer · May 2026 – Present
+**2BitSoft** · Full-Stack Developer · Dubai, UAE · Oct 2026 – Present
+Full-stack web applications for software, automation, and digital transformation projects.
+
+**RemoteIntegrity LLC** · Full-Stack Developer (Contract) · Clearwater, Florida, USA · Oct 2026 – Present
+Front-end and back-end web application work: server-side logic, APIs, database integrations, testing, and deployment.
+
+**Ledgercross** · Software Developer · Dhaka, Bangladesh · May 2026 – Sep 2026
 Production software across the stack for enterprise finance: REST APIs, async processing, automated testing, and cloud infrastructure.
 
-**BSS** · Software Engineer Intern · Feb 2026 – Apr 2026
+**BSS** · Software Engineer Intern · Dhaka, Bangladesh · Feb 2026 – Apr 2026
 Developed responsive frontend interfaces with HTML5, CSS3, and JavaScript, integrated with RESTful APIs.
 
 ## Education
