@@ -253,6 +253,8 @@ American International University-Bangladesh · 2022 – 2026
 
 Open to full-stack, platform, and applied ML roles, plus select freelance and product work.
 
+**Reach me:** [sajidsajidurrahman99@gmail.com](mailto:sajidsajidurrahman99@gmail.com)
+
 [`Portfolio`](https://sajidur.me) · [`GitHub`](https://github.com/Saji-d) · [`LinkedIn`](https://www.linkedin.com/in/sajidur-rahman-sajid/) · [`Email`](mailto:sajidsajidurrahman99@gmail.com)
 
 </div>
