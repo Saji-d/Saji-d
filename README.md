@@ -73,34 +73,21 @@ I build full-stack software and production-oriented AI/ML systems, from data pip
 
 <img src="./assets/divider.svg" width="100%" alt="">
 
-<h2 align="center"><code>> currently</code></h2>
+## `> currently`
 
-<table align="center">
-<tr>
-<td align="center" valign="top" width="50%">
-
-**◈ WORKING WITH**
-<br/>
-**2BitSoft** · Dubai, UAE
-Full-Stack Developer · since Oct 2026
-<br/>
-**RemoteIntegrity** · USA
-Full-Stack Developer (contract) · since Oct 2026
-
-</td>
-<td align="center" valign="top" width="50%">
-
-**◈ BUILDING & SHIPPED**
-<br/>
-**VoiceCon**
-Realtime AI voice calling: Kotlin app, Fastify + Prisma API, Twilio media streams, Seed-VC on GPU
-<br/>
-**InvoicePilot**
-AI invoice processing: OCR, validation, duplicate and anomaly detection
-
-</td>
-</tr>
-</table>
+```text
+┌─ WORKING WITH ─────────────────────────────────────────────────────────────┐
+│  2BitSoft          Full-Stack Developer   Dubai, UAE        since Oct 2026 │
+│  RemoteIntegrity   Full-Stack Developer   USA · contract    since Oct 2026 │
+└────────────────────────────────────────────────────────────────────────────┘
+┌─ BUILDING & SHIPPED ───────────────────────────────────────────────────────┐
+│  VoiceCon      Android-first AI voice calling with realtime voice          │
+│                conversion: Kotlin app, Fastify + Prisma API, Twilio        │
+│                media streams, Seed-VC on GPU                               │
+│  InvoicePilot  AI invoice processing: OCR, validation, duplicate and       │
+│                anomaly detection                                           │
+└────────────────────────────────────────────────────────────────────────────┘
+```
 
 <img src="./assets/divider.svg" width="100%" alt="">
 
@@ -210,40 +197,17 @@ Comparative study showing a domain-tuned transformer outperforms generic sentime
 
 ## `> education`
 
-<table width="100%">
-<tr>
-<td colspan="3" align="center">
-
-**BSc in Computer Science & Engineering**
-<br/>
-American International University-Bangladesh · 2022 – 2026
-
-</td>
-</tr>
-<tr>
-<td align="center" width="33%">
-
-**3.91 / 4.00**
-<br/>
-`CGPA`
-
-</td>
-<td align="center" width="33%">
-
-**5×**
-<br/>
-`Dean's Award`
-
-</td>
-<td align="center" width="33%">
-
-**Up to 70%**
-<br/>
-`Merit Scholarship`
-
-</td>
-</tr>
-</table>
+```text
+┌─ BSc · COMPUTER SCIENCE & ENGINEERING ────────────────────────────────┐
+│  American International University-Bangladesh                         │
+│                                                                       │
+│  2022 ────────────────────────●──────────────────────── 2026          │
+│                                                                       │
+│  CGPA   ███████████████████████████░   3.91 / 4.00                    │
+│                                                                       │
+│  5x Dean's Award   ·   AIUB Merit Scholar (up to 70% tuition waiver)  │
+└───────────────────────────────────────────────────────────────────────┘
+```
 
 <img src="./assets/divider.svg" width="100%" alt="">
 
