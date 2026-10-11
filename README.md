@@ -117,9 +117,9 @@ Production-minded Kanban board with authentication, role-based collaboration, se
 Turf booking platform. Players discover and reserve grounds on a Google Map; turf locations carry a MongoDB 2dsphere index.
 `React` `Express` `MongoDB` `Google Maps`
 
-**[FinBERT Financial Sentiment](https://github.com/Saji-d/financial-sentiment-analysis-bert)** · `NLP`
-Comparative study showing a domain-tuned transformer outperforms generic sentiment models on financial text.
-`BERT` `Transformers` `PyTorch`
+**[ZENJI Storefront](https://github.com/Saji-d/zenji-storefront)** · [`live`](https://zenji-webstore.vercel.app)
+Anime streetwear storefront with quick view, a cart drawer with a free-shipping meter, and a persisted wishlist, built as a pure-frontend assessment with a Vitest suite and axe-core accessibility scans.
+`React 19` `TypeScript` `Vite` `Framer Motion` `Vitest`
 
 <img src="./assets/divider.svg" width="100%" alt="">
 
