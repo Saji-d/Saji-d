@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-<img src="https://komarev.com/ghpvc/?username=Saji-d&style=for-the-badge&color=8B7CF6&labelColor=0B0E1A&label=VISITORS" alt="Profile visitors"/>
+<img src="https://api.visitorbadge.io/api/visitors?path=github.com%2FSaji-d&label=PROFILE%20VIEWS&labelColor=%230B0E1A&countColor=%238B7CF6&style=for-the-badge&labelStyle=upper" alt="Profile views" height="28"/>
 </p>
 
 </div>
