@@ -6,7 +6,7 @@
   <img src="assets/banner-dark.svg" alt="Sajidur Rahman Sajid, Full-Stack Developer | AI/ML" width="100%">
 </picture>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=1000&color=9B8CFA&center=true&vCenter=true&width=780&height=40&lines=Full-Stack+Developer+%40+2BitSoft+(Dubai)+%26+RemoteIntegrity+(USA);Building+VoiceCon%3A+realtime+AI+voice+calling;BSc+CSE%2C+AIUB+(3.91+%2F+4.00+CGPA);Open+to+Full-Stack%2C+AI%2FML+%26+Research+roles" alt="Full-Stack Developer at 2BitSoft (Dubai) and RemoteIntegrity (USA), building VoiceCon, BSc CSE at AIUB, open to full-stack, AI/ML and research roles" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=1000&color=9B8CFA&center=true&vCenter=true&width=780&height=40&lines=Full-Stack+Developer+%40+RemoteIntegrity+(USA%2C+contract);Building+VoiceCon%3A+realtime+AI+voice+calling;BSc+CSE%2C+AIUB+(3.91+%2F+4.00+CGPA);Open+to+Full-Stack%2C+AI%2FML+%26+Research+roles" alt="Full-Stack Developer at RemoteIntegrity (USA, contract), building VoiceCon, BSc CSE at AIUB, open to full-stack, AI/ML and research roles" />
 
 <p align="center">
 <a href="mailto:sajidsajidurrahman99@gmail.com"><img src="https://img.shields.io/badge/OPEN%20TO%20WORK-Full%20Stack%2C%20Applied%20ML%2C%20Research-8B7CF6?style=for-the-badge&labelColor=0B0E1A" alt="Open to work"/></a>
@@ -32,7 +32,7 @@
 ```python
 class Sajid:
     role      = "Full-Stack Developer"
-    now       = ["2BitSoft (Dubai)", "RemoteIntegrity (USA, contract)"]
+    now       = "RemoteIntegrity (USA, contract)"
     building  = "VoiceCon: realtime AI voice calling"
     focus     = ["Full-Stack Engineering", "Applied AI/ML", "Backend Systems"]
     education = "BSc CSE, AIUB (3.91 / 4.00)"
@@ -77,7 +77,6 @@ I build full-stack software and production-oriented AI/ML systems, from data pip
 
 ```text
 ┌─ WORKING WITH ─────────────────────────────────────────────────────────────┐
-│  2BitSoft          Full-Stack Developer   Dubai, UAE        since Oct 2026 │
 │  RemoteIntegrity   Full-Stack Developer   USA · contract    since Oct 2026 │
 └────────────────────────────────────────────────────────────────────────────┘
 ┌─ BUILDING & SHIPPED ───────────────────────────────────────────────────────┐
@@ -184,8 +183,7 @@ Anime streetwear storefront with quick view, a cart drawer with a free-shipping 
 ## `> experience`
 
 ```text
-2026 ─●─ 2BitSoft ········· Full-Stack Developer ······ Dubai, UAE ···· Oct 2026 – Present
-      ●─ RemoteIntegrity ·· Full-Stack (Contract) ····· Florida, USA ·· Oct 2026 – Present
+2026 ─●─ RemoteIntegrity ·· Full-Stack (Contract) ····· Florida, USA ·· Oct 2026 – Present
       ●─ Ledgercross ······ Software Developer ········ Dhaka, BD ····· May 2026 – Sep 2026
       ●─ BSS ·············· Software Engineer Intern ·· Dhaka, BD ····· Feb 2026 – Apr 2026
 ```
