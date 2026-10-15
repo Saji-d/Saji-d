@@ -93,12 +93,10 @@ I build full-stack software and production-oriented AI/ML systems, from data pip
 ## `> projects`
 
 **[VoiceCon](https://voicecon.app/)** · [`live`](https://voicecon.app/)
-<a href="https://voicecon.app/"><img src="./assets/voicecon.jpg" width="560" alt="VoiceCon website: live voice conversion for phone calls"></a>
 Android-first AI voice calling. A caller's live speech is converted in real time into an authorized voice profile on a GPU (Seed-VC) and delivered to the recipient over a Twilio PSTN call, using a two-leg media bridge that fails closed so raw audio is never forwarded. Includes a Kotlin app, a billing-aware backend, an admin panel, and a realtime gateway.
 `Kotlin` `Jetpack Compose` `Fastify` `Prisma` `PostgreSQL` `Twilio` `Python` `PyTorch` `Seed-VC` `React`
 
 **[InvoicePilot](https://www.sajidur.me/projects/invoicepilot)** · `shipped`
-<a href="https://www.sajidur.me/projects/invoicepilot"><img src="./assets/invoicepilot.jpg" width="560" alt="InvoicePilot: AI invoice processing platform"></a>
 AI-powered invoice processing platform, built by a team at Ledgercross. My part was the AI extraction service: an 11-stage pipeline that extracts, validates, and normalizes invoice data via OCR, then flags duplicates and anomalies before it reaches the API.
 `FastAPI` `Python` `Mindee OCR` `PostgreSQL` `Redis Streams`
 
