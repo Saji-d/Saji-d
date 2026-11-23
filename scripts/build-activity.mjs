@@ -6,6 +6,7 @@
 import { writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { THEMES, ROOT, FONT_STACK as F, svgDoc, esc } from "./lib/kit.mjs";
+import { runningCat, CAT_CSS } from "./lib/cat.mjs";
 
 const args = process.argv.slice(2);
 const demo = args.includes("--demo");
@@ -72,10 +73,10 @@ function render(t, cal, s) {
   const cuts = [q(0.35), q(0.7), q(0.93)];
   const lvl = (n) => (n === 0 ? 0 : 1 + cuts.filter((c) => n > c).length);
   const levels = t.name === "dark"
-    ? [["#2a2c52", "#1f2142", "#171934"], ["#4a4fc0", "#3a3ea0", "#2c3080"], ["#6366f1", "#4f52d0", "#3d40a8"], ["#a855f7", "#8a3fd6", "#6d31ac"], ["#22d3ee", "#19aac4", "#1383a0"]]
-    : [["#dfe1f6", "#cfd2ee", "#bfc3e4"], ["#a5b4fc", "#8f9ff0", "#7a8add"], ["#6366f1", "#5254d6", "#4244b5"], ["#a855f7", "#9140de", "#7a32bd"], ["#0e7490", "#0b6079", "#084d61"]];
+    ? [["#12303f", "#0e2531", "#0a1d28"], ["#0f6a63", "#0c5650", "#094541"], ["#14a393", "#0f877a", "#0b6c62"], ["#2dd4bf", "#22b3a1", "#198f81"], ["#ffc857", "#e0a93c", "#b88726"]]
+    : [["#eadfc2", "#dccfae", "#cdbf9a"], ["#7cc7bd", "#62b0a5", "#4b9a8f"], ["#2aa595", "#1f8e80", "#177a6d"], ["#0f766e", "#0c635c", "#0a524c"], ["#e08a00", "#bf7300", "#9c5e00"]];
   const nW = cal.weeks.length;
-  const W = 1000, H = 480;
+  const W = 1000, H = 520;
   const x0 = (W - nW * U[0]) / 2 + 3 * -V[0] / 2 + 10, y0 = 112;
   const cells = [];
   cal.weeks.forEach((days, w) => days.forEach((day, d) => cells.push({ w, d, n: day.contributionCount, x: x0 + w * U[0] + d * V[0], y: y0 + w * U[1] + d * V[1] })));
@@ -92,21 +93,21 @@ function render(t, cal, s) {
       + `<path fill="${right}" d="M${r(x + ux)} ${r(yt + uy)}l${vx} ${vy}v${h}l${-vx} ${-vy}z"/>`
       + `<path fill="${top}" d="M${r(x)} ${r(yt)}l${ux} ${uy}l${vx} ${vy}l${-ux} ${-uy}z"/>`;
   }
-  const stat = (x, v, label) => `<text x="${x}" y="${H - 58}" font-family="${F.display}" font-weight="700" font-size="34" letter-spacing="-.6" fill="${t.text}">${esc(v)}</text><text x="${x}" y="${H - 34}" font-family="${F.mono}" font-weight="500" font-size="12" fill="${t.muted}">${esc(label)}</text>`;
+  const stat = (x, v, label) => `<text x="${x}" y="${H - 104}" font-family="${F.display}" font-weight="700" font-size="34" letter-spacing="-.6" fill="${t.text}">${esc(v)}</text><text x="${x}" y="${H - 80}" font-family="${F.mono}" font-weight="500" font-size="12" fill="${t.muted}">${esc(label)}</text>`;
   const busy = s.busiest.date ? new Date(s.busiest.date + "T00:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" }) : "";
-  const body = `<rect width="${W}" height="${H}" rx="22" fill="${t.bg}"/><rect width="${W}" height="${H}" rx="22" fill="url(#ga)"/><rect width="${W}" height="${H}" rx="22" fill="url(#gb)"/>
+  const body = `<rect width="${W}" height="${H}" rx="22" fill="url(#sky)"/>
 <rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="21.5" fill="none" stroke="${t.lineStrong}"/>
 <text x="36" y="46" font-family="${F.mono}" font-weight="500" font-size="12" letter-spacing="1.3" fill="${t.accent}">LAST 12 MONTHS ON GITHUB</text>
+<g transform="translate(0 ${H - 22})"><clipPath id="rc"><rect x="0" y="-80" width="${W}" height="110" /></clipPath><g clip-path="url(#rc)"><path d="M0 0H${W}" stroke="${t.lineStrong}" stroke-width="2" stroke-dasharray="26 22" class="lane"/><g class="runner"><g transform="translate(60 0) scale(.7)">${runningCat(t)}</g></g></g></g>
 <g class="in"><path fill="${levels[0][0]}" d="${flat}"/>${bars}</g>
 ${stat(36, cal.total.toLocaleString("en-US"), "contributions")}
 ${stat(250, s.best + (s.best === 1 ? " day" : " days"), "longest streak")}
 ${stat(450, s.cur + (s.cur === 1 ? " day" : " days"), "current streak")}
 ${s.busiest.contributionCount ? stat(650, String(s.busiest.contributionCount), "busiest day, " + busy) : ""}`;
-  const defs = `<radialGradient id="ga" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0) rotate(35) scale(520 380)"><stop offset="0" stop-color="${t.glowA}"/><stop offset="1" stop-color="${t.glowA}" stop-opacity="0"/></radialGradient>
-<radialGradient id="gb" cx="1000" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1000 0) rotate(140) scale(480 360)"><stop offset="0" stop-color="${t.glowB}"/><stop offset="1" stop-color="${t.glowB}" stop-opacity="0"/></radialGradient>`;
+  const defs = `<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${t.skyTop}"/><stop offset=".7" stop-color="${t.skyMid}"/><stop offset="1" stop-color="${t.skyLow}"/></linearGradient>`;
   return svgDoc({
     w: W, h: H, theme: t, fonts: ["sg700", "jb500"], defs, body,
-    css: ".in{animation:in 1.2s ease-out both}@keyframes in{from{opacity:0}}",
+    css: CAT_CSS + ".in{animation:in 1.2s ease-out both}@keyframes in{from{opacity:0}}@keyframes dash{to{stroke-dashoffset:-48}}.lane{animation:dash 1.2s linear infinite}@keyframes run{from{transform:translateX(-140px)}to{transform:translateX(1100px)}}.runner{animation:run 10s linear infinite}",
     title: `GitHub activity for ${login}`,
     desc: `${cal.total} contributions in the last year. Longest streak ${s.best} days, current streak ${s.cur} days. Busiest day ${s.busiest.contributionCount} contributions.`,
   });

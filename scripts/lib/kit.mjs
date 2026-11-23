@@ -10,57 +10,75 @@ const read = (p) => readFileSync(join(ROOT, p));
 // Dark values are copied from the portfolio. Light values are the same hues
 // pulled darker so contrast holds on a white page.
 export const THEMES = {
+  // "Night shift": Dhaka after dark. Ink-teal sky, amber windows, mint signal.
   dark: {
     name: "dark",
-    bg: "#080812",
-    surface: "#11111f",
-    surface2: "#171728",
-    line: "#2a2b4a",
-    lineStrong: "#3a3c68",
-    text: "#f8fafc",
-    textSoft: "#b4b8c8",
-    muted: "#9ca3af",
-    accent: "#818cf8",
-    accentFill: "#6366f1",
-    violet: "#a855f7",
-    cyan: "#22d3ee",
-    good: "#3fb28a",
-    warn: "#e8b44b",
-    bad: "#e05b5b",
-    nameFrom: "#f8fafc",
-    nameTo: "#c7d2fe",
-    glowA: "rgba(99,102,241,0.30)",
-    glowB: "rgba(168,85,247,0.20)",
-    dot: "rgba(148,163,255,0.14)",
-    chip: "rgba(99,102,241,0.14)",
-    chipLine: "rgba(129,140,248,0.32)",
-    imgShade: "0.0",
+    bg: "#07141c",
+    skyTop: "#040c14",
+    skyMid: "#0a2230",
+    skyLow: "#164557",
+    surface: "#0d2230",
+    surface2: "#123043",
+    line: "#1f4558",
+    lineStrong: "#2f6a82",
+    text: "#f6efe3",
+    textSoft: "#c5d0cd",
+    muted: "#8fabb2",
+    accent: "#5eead4",
+    accentFill: "#2dd4bf",
+    amber: "#ffc857",
+    coral: "#ff7a59",
+    sky: "#6cc6ff",
+    violet: "#c4a1ff",
+    cyan: "#5eead4",
+    good: "#5eead4",
+    warn: "#ffc857",
+    bad: "#ff7a59",
+    far: "#0c2a3a",
+    mid: "#0a1f2d",
+    near: "#06131d",
+    win: "#ffc857",
+    glowA: "rgba(94,234,212,0.16)",
+    glowB: "rgba(255,200,87,0.12)",
+    chip: "rgba(94,234,212,0.10)",
+    chipLine: "rgba(94,234,212,0.34)",
+    fur: "#ff9f43", furDark: "#c4601a", belly: "#ffe3bd",
+    ink: "#06131d",
   },
+  // "Morning shift": same city, same minute of the day on the other side of the world.
   light: {
     name: "light",
-    bg: "#f6f6fd",
+    bg: "#fff5e2",
+    skyTop: "#a9dde8",
+    skyMid: "#d3eee9",
+    skyLow: "#ffe6bf",
     surface: "#ffffff",
-    surface2: "#eef0fc",
-    line: "#d9dbf2",
-    lineStrong: "#b9bce6",
-    text: "#0e0f24",
-    textSoft: "#44476b",
-    muted: "#5d6185",
-    accent: "#4f46e5",
-    accentFill: "#4f46e5",
-    violet: "#9333ea",
-    cyan: "#0e7490",
-    good: "#15803d",
+    surface2: "#fff0d6",
+    line: "#ecd9b4",
+    lineStrong: "#d2b985",
+    text: "#10282f",
+    textSoft: "#365860",
+    muted: "#557077",
+    accent: "#0f766e",
+    accentFill: "#0f9488",
+    amber: "#c47a00",
+    coral: "#e0482a",
+    sky: "#1d7fc4",
+    violet: "#7c4dd6",
+    cyan: "#0f766e",
+    good: "#0f766e",
     warn: "#a16207",
-    bad: "#b91c1c",
-    nameFrom: "#0e0f24",
-    nameTo: "#4338ca",
-    glowA: "rgba(99,102,241,0.18)",
-    glowB: "rgba(168,85,247,0.12)",
-    dot: "rgba(67,56,202,0.12)",
-    chip: "rgba(79,70,229,0.08)",
-    chipLine: "rgba(79,70,229,0.28)",
-    imgShade: "0.0",
+    bad: "#c2371b",
+    far: "#bcdad8",
+    mid: "#8fbcbc",
+    near: "#5e9396",
+    win: "#fff4cf",
+    glowA: "rgba(15,148,136,0.12)",
+    glowB: "rgba(255,170,60,0.18)",
+    chip: "rgba(15,118,110,0.08)",
+    chipLine: "rgba(15,118,110,0.30)",
+    fur: "#f28a1f", furDark: "#b4540f", belly: "#ffe9c8",
+    ink: "#10282f",
   },
 };
 
@@ -88,7 +106,7 @@ export function fontFaces(keys) {
     .join("");
 }
 
-export const REDUCED_MOTION = "@media (prefers-reduced-motion:reduce){*{animation:none!important}}";
+export const REDUCED_MOTION = "@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}";
 
 export function imageDataUri(path, mime = "image/jpeg") {
   return `data:${mime};base64,${read(path).toString("base64")}`;
@@ -118,3 +136,10 @@ ${body}
 </svg>
 `;
 }
+
+// Small seeded generator so every build draws the same city.
+export function rng(seed = 1) {
+  let s = seed >>> 0 || 1;
+  return () => ((s = (s * 1664525 + 1013904223) >>> 0) / 4294967296);
+}
+export const r1 = (n) => Math.round(n * 10) / 10;

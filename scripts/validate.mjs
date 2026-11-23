@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Checks every SVG in assets/: well-formed XML (xmllint, skipped if missing),
-// under 100 KB, no scripts, no external URLs (GitHub's proxy would block them).
+// under 150 KB, no scripts, no external URLs (GitHub's proxy would block them).
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { spawnSync } from "node:child_process";
@@ -15,7 +15,7 @@ for (const f of readdirSync(dir).filter((f) => f.endsWith(".svg"))) {
   const text = readFileSync(p, "utf8");
   const problems = [];
   const kb = statSync(p).size / 1024;
-  if (kb > 100) problems.push(`${kb.toFixed(0)} KB is over 100 KB`);
+  if (kb > 150) problems.push(`${kb.toFixed(0)} KB is over 150 KB`);
   if (/<script|onload=|onclick=/i.test(text)) problems.push("contains script");
   if (/(?:href|src)=["']https?:/i.test(text) || /url\(\s*["']?https?:/i.test(text)) problems.push("external reference");
   if (hasXmllint) {
