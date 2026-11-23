@@ -1,207 +1,128 @@
 <div align="center">
 
+<a href="https://www.sajidur.me">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img src="assets/banner-dark.svg" alt="Sajidur Rahman Sajid, Full-Stack Developer | AI/ML" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
+  <img src="assets/header-dark.svg" alt="Sajidur Rahman Sajid, Full-Stack Developer and AI Engineer. Now at Lumifi Solutions and RemoteIntegrity. Based in Dhaka, Bangladesh. Open to work." width="100%">
 </picture>
+</a>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=1000&color=9B8CFA&center=true&vCenter=true&width=780&height=40&lines=Full-Stack+Developer+%40+RemoteIntegrity+(USA%2C+contract);Building+VoiceCon%3A+realtime+AI+voice+calling;BSc+CSE%2C+AIUB+(3.91+%2F+4.00+CGPA);Open+to+Full-Stack%2C+AI%2FML+%26+Research+roles" alt="Full-Stack Developer at RemoteIntegrity (USA, contract), building VoiceCon, BSc CSE at AIUB, open to full-stack, AI/ML and research roles" />
-
-<p align="center">
-<a href="mailto:sajidsajidurrahman99@gmail.com"><img src="https://img.shields.io/badge/OPEN%20TO%20WORK-Full%20Stack%2C%20Applied%20ML%2C%20Research-8B7CF6?style=for-the-badge&labelColor=0B0E1A" alt="Open to work"/></a>
-</p>
-
-<p align="center">
-<a href="https://sajidur.me"><img src="https://img.shields.io/badge/Portfolio-0B0E1A?style=for-the-badge&logo=googlechrome&logoColor=9B8CFA" alt="Portfolio"/></a>
-<a href="https://github.com/Saji-d"><img src="https://img.shields.io/badge/GitHub-0B0E1A?style=for-the-badge&logo=github&logoColor=EEF0FA" alt="GitHub"/></a>
-<a href="https://www.linkedin.com/in/sajidur-rahman-sajid/"><img src="https://img.shields.io/badge/LinkedIn-0B0E1A?style=for-the-badge&logo=linkedin&logoColor=8B7CF6" alt="LinkedIn"/></a>
-<a href="mailto:sajidsajidurrahman99@gmail.com"><img src="https://img.shields.io/badge/Email-0B0E1A?style=for-the-badge&logo=gmail&logoColor=9B8CFA" alt="Email"/></a>
-</p>
-
-<p align="center">
-<img src="https://komarev.com/ghpvc/?username=Saji-d&style=for-the-badge&color=8B7CF6&labelColor=0B0E1A&label=VISITORS" alt="Profile visitors"/>
-</p>
+**[Portfolio](https://www.sajidur.me)** &nbsp;·&nbsp; **[Resume](https://www.sajidur.me/resume)** &nbsp;·&nbsp; **[LinkedIn](https://www.linkedin.com/in/sajidur-rahman-sajid/)** &nbsp;·&nbsp; **[Email](mailto:sajidsajidurrahman99@gmail.com)**
 
 </div>
 
-<img src="./assets/divider.svg" width="100%" alt="">
+I build full-stack products and the AI systems that sit behind them. Most of my work is where a tidy interface meets a messy backend: an Android app that places a phone call in someone else's voice, a service that decides whether an invoice looks wrong, a student system where one college must never see another's records.
 
-## `> whoami`
+I like software that fails in a way you decided on in advance. VoiceCon ends the call before it forwards raw audio, and my research prototype below reports a result that did not flatter the model.
 
-```python
-class Sajid:
-    role      = "Full-Stack Developer"
-    now       = "RemoteIntegrity (USA, contract)"
-    building  = "VoiceCon: realtime AI voice calling"
-    focus     = ["Full-Stack Engineering", "Applied AI/ML", "Backend Systems"]
-    education = "BSc CSE, AIUB (3.91 / 4.00)"
-    base      = "Dhaka, Bangladesh · UTC+6"
-```
+I finished a BSc in Computer Science and Engineering at AIUB (CGPA 3.91 / 4.00) in April 2026 and have been shipping professionally since.
 
-I build full-stack software and production-oriented AI/ML systems, from data pipelines and model training to APIs, databases, mobile apps, and the interfaces people use. Most of that work sits where backend engineering meets applied AI.
+## Now
 
-<img src="./assets/divider.svg" width="100%" alt="">
+| | Role | What I am doing |
+|---|---|---|
+| **Lumifi Solutions** (Australia) | Full-Stack Developer, remote, since Nov 2026 | Building a multi-tenant student management system for Australian training organisations (RTOs) on Next.js, TypeScript, Drizzle ORM and PostgreSQL. I own the Applications and Enrolments module. Also an early-stage business site and resume bank for the Bangladesh market (World Bridge, in progress). |
+| **RemoteIntegrity LLC** (USA) | Full-Stack Developer, contract, since Oct 2026 | Front-end and back-end components, APIs and database integrations for client web applications, through code review, testing and deployment. |
 
-## `> focus`
+Before that: **Ledgercross**, Dhaka (May to Sep 2026). I built the FastAPI OCR and fraud service for InvoicePilot and delivered FUMAK, a barcode inventory and POS system for a real shop, as the only developer.
 
-<table width="100%">
+## Selected work
+
+<a href="https://voicecon.app/">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-voicecon-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-voicecon-light.svg">
+  <img src="assets/card-voicecon-dark.svg" alt="VoiceCon, live at voicecon.app. Android-first AI voice calling: speech is converted on a GPU and delivered over a normal phone call. 86 ms median inference per 180 ms block, about 0.5 s server-side delay, 0 ms of audio dropped over a 5-minute run, 336 backend tests. It fails closed: any conversion error ends the call." width="100%">
+</picture>
+</a>
+
+<a href="https://neuro-screen.streamlit.app/">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-neuro-screen-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-neuro-screen-light.svg">
+  <img src="assets/card-neuro-screen-dark.svg" alt="Neuro-Screen. After removing target leakage, leakage-free 5-fold nested cross-validation gives 62.1 percent accuracy, equal to the majority baseline, and ROC-AUC 0.48 against a chance level of 0.50. 2,236 respondents, 12 predictors, a 4-model stack." width="49%">
+</picture>
+</a>
+<a href="#now">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-lumifi-sms-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-lumifi-sms-light.svg">
+  <img src="assets/card-lumifi-sms-dark.svg" alt="Lumifi SMS, company work. A multi-tenant student management system for Australian training organisations on Next.js, TypeScript, Drizzle and PostgreSQL, with per-college row-level scoping. I built the Applications and Enrolments module." width="49%">
+</picture>
+</a>
+
+<table>
 <tr>
-<td width="33%" align="center" valign="top">
+<td width="33%" valign="top">
 
-**◈ AI / ML**
-<br/>
-`Voice Conversion` `OCR` `NLP` `RAG` `Computer Vision`
+**VoiceCon** &nbsp;[live](https://voicecon.app/) · [case study](https://www.sajidur.me/projects/voicecon)
 
-</td>
-<td width="33%" align="center" valign="top">
+A Kotlin app, a Fastify and Prisma billing API, a React admin panel, a Python media gateway and a Seed-VC GPU worker, joined through Twilio. The recipient only hears what the worker sends back, and if the worker errors the bridge clears its queue and ends the call.
 
-**◈ Backend**
-<br/>
-`APIs` `Realtime` `Pipelines` `Databases` `Auth`
+Measured on an RTX A5000 (6 diffusion steps, 180 ms blocks, 5-minute run): p50 inference about 86 ms, real-time factor 0.50, no audio dropped.
 
 </td>
-<td width="33%" align="center" valign="top">
+<td width="33%" valign="top">
 
-**◈ Full-Stack & Mobile**
-<br/>
-`React` `Next.js` `TypeScript` `Kotlin` `Compose`
+**Neuro-Screen** &nbsp;[live demo](https://neuro-screen.streamlit.app/) · [repo](https://github.com/Saji-d/neuro-screen)
+
+A Streamlit prototype that screens survey answers for cognitive-impairment risk in university students, from a group research project at AIUB. The app and the re-analysis are my work.
+
+Re-checking the original pipeline I found target leakage and removed it. With 5-fold nested cross-validation, accuracy equals the majority baseline and ROC-AUC is 0.48. I kept that result because it is the true one.
+
+</td>
+<td width="33%" valign="top">
+
+**Lumifi SMS** &nbsp;(private, company work)
+
+Per-college tenancy with row-level scoping, and tests that check one college cannot read another's data.
+
+My module covers Applications and Enrolments: one shared form and validation for public, staff and agent entry, saved drafts, generated Offer IDs, admin-configurable fields, documents and Student ID format, offer-letter versioning and CSV bulk import. It is backed by integration tests and WCAG contrast, motion and responsive audits.
 
 </td>
 </tr>
 </table>
 
-<img src="./assets/divider.svg" width="100%" alt="">
+Also: **[InvoicePilot](https://www.sajidur.me/projects/invoicepilot)**, a team-built invoice platform where I wrote the AI extraction service (an 11-stage OCR pipeline with 9 fraud rules, 19 anomaly rules and 246 pytest tests), and **[FUMAK](https://fumak-inventory.vercel.app/)**, the inventory and POS system for a real retail shop. More on the [portfolio](https://www.sajidur.me/#projects).
 
-## `> currently`
+## Stack
 
-```text
-┌─ WORKING WITH ─────────────────────────────────────────────────────────────┐
-│  RemoteIntegrity   Full-Stack Developer   USA · contract    since Oct 2026 │
-└────────────────────────────────────────────────────────────────────────────┘
-┌─ BUILDING & SHIPPED ───────────────────────────────────────────────────────┐
-│  VoiceCon      Android-first AI voice calling with realtime voice          │
-│                conversion: Kotlin app, Fastify + Prisma API, Twilio        │
-│                media streams, Seed-VC on GPU                               │
-│  InvoicePilot  AI invoice processing: OCR, validation, duplicate and       │
-│                anomaly detection                                           │
-└────────────────────────────────────────────────────────────────────────────┘
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/stack-light.svg">
+  <img src="assets/stack-dark.svg" alt="Languages: Python, TypeScript, JavaScript, Kotlin, C++. Web and mobile: React, Next.js, Tailwind CSS, Jetpack Compose, Android. Backend and data: FastAPI, Fastify, Node.js, NestJS, Express, PostgreSQL, Prisma, Redis, MongoDB. AI and ML: PyTorch, scikit-learn, Hugging Face, OpenCV, pandas, Streamlit. Shipping: Docker, Git, Vercel, Twilio." width="100%">
+</picture>
 
-<img src="./assets/divider.svg" width="100%" alt="">
+## Research
 
-## `> projects`
+I write up what I measure, including when it is disappointing.
 
-**[VoiceCon](https://voicecon.app/)** · [`live`](https://voicecon.app/)
-Android-first AI voice calling. A caller's live speech is converted in real time into an authorized voice profile on a GPU (Seed-VC) and delivered to the recipient over a Twilio PSTN call, using a two-leg media bridge that fails closed so raw audio is never forwarded. Includes a Kotlin app, a billing-aware backend, an admin panel, and a realtime gateway.
-`Kotlin` `Jetpack Compose` `Fastify` `Prisma` `PostgreSQL` `Twilio` `Python` `PyTorch` `Seed-VC` `React`
+| Study | Result |
+|---|---|
+| Neuro-Screen, cognitive-impairment screening (AIUB group project) | After removing target leakage, 5-fold nested CV gives 62.1% accuracy (the majority baseline) and ROC-AUC 0.48. A negative result, with the leakage found and documented. |
+| Explainable Bangla toxic comment detection | BanglaBERT with SHAP and LIME: 86% accuracy, 0.91 ROC-AUC, 5-fold stratified CV. |
+| Early-warning model for high-value customer drop-off | RFM profiling and clustering on 4,338 customers, with a Random Forest at 0.788 ROC-AUC. |
+| Water turbidity from phone photos | EfficientNet-B0 fine-tuned on 300+ self-collected images, with an honest account of how hard field generalisation is. |
 
-**[InvoicePilot](https://www.sajidur.me/projects/invoicepilot)** · `shipped`
-AI-powered invoice processing platform, built by a team at Ledgercross. My part was the AI extraction service: an 11-stage pipeline that extracts, validates, and normalizes invoice data via OCR, then flags duplicates and anomalies before it reaches the API.
-`FastAPI` `Python` `Mindee OCR` `PostgreSQL` `Redis Streams`
+## Activity
 
-**[Fumak Inventory Management](https://github.com/Saji-d/fumak-inventory)** · [`live`](https://fumak-inventory.vercel.app)
-Inventory and point-of-sale system running in an active retail business, with barcode scanning across a native Android app and a web admin console.
-`Kotlin` `Jetpack Compose` `Next.js` `Neon PostgreSQL` `Prisma`
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg">
+  <img src="assets/activity-dark.svg" alt="Isometric chart of my GitHub contributions over the last 12 months, refreshed daily by a GitHub Action." width="100%">
+</picture>
 
-**[CaseVault](https://github.com/Saji-d/casevault)** · [`live`](https://casevault-bd.vercel.app)
-Legal document search for Bangladeshi law: FastAPI keyword search over 46 statutes and judgements with a Next.js frontend.
-`FastAPI` `Python` `Next.js` `TypeScript`
+<br>
 
-**[Mini Kanban Board](https://github.com/Saji-d/mini-kanban-board)** · [`live`](https://mini-kanban-board-frontend.vercel.app)
-Production-minded Kanban board with authentication, role-based collaboration, secure authorization, and drag-and-drop task reordering.
-`Next.js` `NestJS` `PostgreSQL` `Prisma` `Docker`
-
-**[LedgerTurf](https://github.com/Saji-d/ledgerturf)** · [`live`](https://ledgerturf.vercel.app)
-Turf booking platform. Players discover and reserve grounds on a Google Map; turf locations carry a MongoDB 2dsphere index.
-`React` `Express` `MongoDB` `Google Maps`
-
-**[ZENJI Storefront](https://github.com/Saji-d/zenji-storefront)** · [`live`](https://zenji-webstore.vercel.app)
-Anime streetwear storefront with quick view, a cart drawer with a free-shipping meter, and a persisted wishlist, built as a pure-frontend assessment with a Vitest suite and axe-core accessibility scans.
-`React 19` `TypeScript` `Vite` `Framer Motion` `Vitest`
-
-<img src="./assets/divider.svg" width="100%" alt="">
-
-## `> research`
-
-**[Neuro-Screen](https://github.com/Saji-d/neuro-screen)** · [`live demo`](https://neuro-screen.streamlit.app) · hybrid CatBoost + ANN ensemble for cognitive-impairment risk screening in insomniac university students. 2,237 survey responses, 95.2% accuracy, 0.982 ROC-AUC.
-
-**Explainable Bangla Toxic Comment Detection** · BanglaBERT fine-tuned for toxicity detection in Bengali text, IEEE-format paper. 86% accuracy, 0.91 ROC-AUC, 5-fold cross-validation.
-
-**Early Warning Model for High-Value Customer Drop-Off** · RFM feature engineering, K-Means segmentation, and Random Forest on the UCI Online Retail dataset. Segments 4,338 customers; the early-risk model reaches 0.79 ROC-AUC on the 776 high-value customers.
-
-<img src="./assets/divider.svg" width="100%" alt="">
-
-## Tech Stack
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg">
+  <img src="assets/footer-dark.svg" alt="Open to full-stack, platform and applied ML roles, plus select freelance and product work." width="100%">
+</picture>
 
 <div align="center">
 
-**Languages**
-
-<img src="https://skillicons.dev/icons?i=python,ts,js,java,cpp,cs&theme=dark" alt="Python, TypeScript, JavaScript, Java, C++, C#" height="48">
-
-**AI / ML**
-
-<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,sklearn&theme=dark" alt="PyTorch, TensorFlow, OpenCV, scikit-learn" height="48">
-
-**Systems, Data & Web3**
-
-<img src="https://skillicons.dev/icons?i=fastapi,nextjs,react,postgres,mongodb,redis,docker,git,prisma,supabase,solidity,nestjs,tailwind,vite,vercel&theme=dark" alt="FastAPI, Next.js, React, PostgreSQL, MongoDB, Redis, Docker, Git, Prisma, Supabase, Solidity, NestJS, Tailwind CSS, Vite, Vercel" height="48">
-
-**Also**
-
-<img src="https://img.shields.io/badge/Transformers-0B0E1A?style=for-the-badge&logo=huggingface&logoColor=FFD21E" alt="Transformers" height="32">
-<img src="https://img.shields.io/badge/Pandas-0B0E1A?style=for-the-badge&logo=pandas&logoColor=FFFFFF" alt="Pandas" height="32">
-<img src="https://img.shields.io/badge/Kotlin-0B0E1A?style=for-the-badge&logo=kotlin&logoColor=7F52FF" alt="Kotlin" height="32">
-<img src="https://img.shields.io/badge/Jetpack%20Compose-0B0E1A?style=for-the-badge&logo=jetpackcompose&logoColor=4285F4" alt="Jetpack Compose" height="32">
-<img src="https://img.shields.io/badge/Fastify-0B0E1A?style=for-the-badge&logo=fastify&logoColor=FFFFFF" alt="Fastify" height="32">
-<img src="https://img.shields.io/badge/Twilio-0B0E1A?style=for-the-badge&logo=twilio&logoColor=F22F46" alt="Twilio" height="32">
-<img src="https://img.shields.io/badge/Streamlit-0B0E1A?style=for-the-badge&logo=streamlit&logoColor=FF4B4B" alt="Streamlit" height="32">
-
-</div>
-
-## GitHub Analytics
-
-<div align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Saji-d&theme=github_dark&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&icon_color=9b8cfa&border_color=1c2030" width="100%" alt="GitHub profile summary">
-</div>
-
-<div align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Saji-d&theme=github_dark&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&icon_color=9b8cfa&border_color=1c2030" width="49%" alt="GitHub stats"><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Saji-d&theme=github_dark&utcOffset=6&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&border_color=1c2030&chart_color=8b7cf6" width="49%" alt="Most productive commit hours">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Saji-d&theme=github_dark&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&border_color=1c2030" width="49%" alt="Top languages by repo"><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Saji-d&theme=github_dark&bg_color=0b0e1a&title_color=9b8cfa&text_color=c9cbe0&border_color=1c2030" width="49%" alt="Top languages by commit">
-</div>
-
-<div align="center">
-<img src="./assets/github-streak.svg" width="100%" alt="GitHub streak stats">
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/Saji-d/Saji-d/output/github-snake-dark.svg" width="100%" alt="GitHub contribution snake">
-</div>
-
-## `> experience`
-
-```text
-2026 ─●─ RemoteIntegrity ·· Full-Stack (Contract) ····· Florida, USA ·· Oct 2026 – Present
-      ●─ Ledgercross ······ Software Developer ········ Dhaka, BD ····· May 2026 – Sep 2026
-      ●─ BSS ·············· Software Engineer Intern ·· Dhaka, BD ····· Feb 2026 – Apr 2026
-```
-
-## `> education`
-
-<img src="./assets/education.svg" width="100%" alt="BSc in Computer Science and Engineering at AIUB, 2022 to 2026. CGPA 3.91 out of 4.00, 5x Dean's Award, Merit Scholar with up to 70% tuition waiver, thesis NeuroScreen.">
-
-<img src="./assets/divider.svg" width="100%" alt="">
-
-<div align="center">
-
-## `> availability`
-
-Open to full-stack, platform, and applied ML roles, plus select freelance and product work.
-
-**Reach me:** [sajidsajidurrahman99@gmail.com](mailto:sajidsajidurrahman99@gmail.com)
-
-[`Portfolio`](https://sajidur.me) · [`GitHub`](https://github.com/Saji-d) · [`LinkedIn`](https://www.linkedin.com/in/sajidur-rahman-sajid/) · [`Email`](mailto:sajidsajidurrahman99@gmail.com)
+[sajidsajidurrahman99@gmail.com](mailto:sajidsajidurrahman99@gmail.com) &nbsp;·&nbsp; [sajidur.me](https://www.sajidur.me) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/sajidur-rahman-sajid/) &nbsp;·&nbsp; Dhaka, Bangladesh (UTC+6)
 
 </div>
