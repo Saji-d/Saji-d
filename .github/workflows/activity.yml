@@ -27,6 +27,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           LANGUAGES_TOKEN: ${{ secrets.LANGUAGES_TOKEN }}
+          ACTIVITY_TOKEN: ${{ secrets.ACTIVITY_TOKEN }}
         run: node scripts/build.mjs
       - name: Publish changed cards
         run: |

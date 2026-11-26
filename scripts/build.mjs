@@ -44,6 +44,38 @@ async function privateLanguages() {
   }
 }
 
+// ACTIVITY_TOKEN (classic, `repo` scope) can see every repository the account can. The card shows
+// only repositories with a commit by the account owner, and only that commit's first words.
+// Workflow logs are public: never log names, messages or API error text from here.
+async function recentWork() {
+  const token = process.env.ACTIVITY_TOKEN;
+  if (!token) return null;
+  const ask = async (query, variables) => {
+    const res = await fetch('https://api.github.com/graphql', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query, variables }),
+      signal: AbortSignal.timeout(30_000),
+    });
+    return (await res.json()).data; // an organisation that blocks the token nulls only its own rows
+  };
+  try {
+    const { viewer } = await ask('{viewer{id login}}');
+    if (viewer.login !== LOGIN) throw new Error('wrong account');
+    const data = await ask(`query($id:ID!){viewer{repositories(first:40,affiliations:[OWNER,COLLABORATOR,ORGANIZATION_MEMBER],ownerAffiliations:[OWNER,COLLABORATOR,ORGANIZATION_MEMBER],orderBy:{field:PUSHED_AT,direction:DESC}){
+      nodes{name owner{login} isPrivate primaryLanguage{name} defaultBranchRef{target{... on Commit{history(first:1,author:{id:$id}){nodes{messageHeadline committedDate}}}}}}}}}`, { id: viewer.id });
+    const rows = data.viewer.repositories.nodes.flatMap((r) => {
+      const c = r?.defaultBranchRef?.target?.history?.nodes[0];
+      return c ? [{ owner: r.owner.login, name: r.name, isPrivate: r.isPrivate, language: r.primaryLanguage?.name, date: c.committedDate, message: c.messageHeadline }] : [];
+    });
+    if (!rows.some((r) => r.isPrivate)) throw new Error('no private rows');
+    return rows.sort((a, z) => Date.parse(z.date) - Date.parse(a.date));
+  } catch {
+    console.log('::warning::Recently pushed card is public-only: ACTIVITY_TOKEN could not read private repositories');
+    return null;
+  }
+}
+
 async function load() {
   if (process.argv[2]) return JSON.parse(readFileSync(process.argv[2], 'utf8')).data.user;
   if (!process.env.GITHUB_TOKEN) throw new Error('GITHUB_TOKEN is required');
@@ -52,6 +84,7 @@ async function load() {
 
 const user = await load();
 const withPrivate = await privateLanguages();
+const work = await recentWork();
 const cc = user.contributionsCollection;
 const weeks = cc.contributionCalendar.weeks;
 if (!weeks?.length) throw new Error('Empty contribution calendar');
@@ -186,19 +219,22 @@ const stats = (m) => {
 
 const now = (m) => {
   const W = m ? 420 : 846, x = m ? 26 : 44;
-  const list = repos.filter((r) => r.name !== LOGIN && !/wedding|reception/i.test(r.name)).slice(0, 6);
+  const all = work ?? repos.map((r) => ({ owner: LOGIN, name: r.name, isPrivate: false, language: r.primaryLanguage?.name, date: r.pushedAt, message: r.defaultBranchRef?.target?.messageHeadline ?? '' }));
+  const list = all.filter((r) => !(r.owner === LOGIN && r.name === LOGIN) && !/wedding|reception/i.test(r.name)).slice(0, 6);
   const rowH = m ? 62 : 45, H = 66 + list.length * rowH + 8;
-  let b = sq(x, 33) + label(x + 13, 40, 'Recently pushed') + label(W - x, 40, `Updated ${days.at(-1).date}`, { anchor: 'end' });
+  const updated = new Date(days.at(-1).date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+  let b = sq(x, 33) + label(x + 13, 40, 'Recently pushed') + label(W - x, 40, `Updated ${updated}`, { anchor: 'end' });
   list.forEach((r, i) => {
     const y = 80 + i * rowH;
-    b += `<text x="${x}" y="${y}" font-family="I,system-ui,sans-serif" font-size="${m ? 13.5 : 15}" fill="${C.mute}">${esc(LOGIN)}/<tspan fill="${C.ink}" font-weight="700">${esc(cut(r.name, m ? 30 : 28))}</tspan></text>`;
-    const meta = `${r.primaryLanguage?.name ?? 'Other'} · ${r.pushedAt.slice(0, 10)}`;
-    const msg = r.defaultBranchRef?.target?.messageHeadline ?? '';
-    if (m) b += t(x, y + 20, cut(msg, 48), { size: 10.5, fill: C.mute, mono: true }) + t(W - x, y, meta.split(' · ')[1], { size: 10.5, fill: C.mute, mono: true, anchor: 'end' });
-    else b += t(392, y, cut(msg, 30), { size: 11, fill: C.mute, mono: true }) + t(W - x, y, meta, { size: 11, fill: C.mute, mono: true, anchor: 'end' });
+    const tag = r.isPrivate ? `<tspan dx="10" font-family="J,ui-monospace,monospace" font-size="9.5" font-weight="400" fill="${C.acc}">PRIVATE</tspan>` : '';
+    b += `<text x="${x}" y="${y}" font-family="I,system-ui,sans-serif" font-size="${m ? 13.5 : 15}" fill="${C.mute}">${esc(cut(r.owner, 12))}/<tspan fill="${C.ink}" font-weight="700">${esc(cut(r.name, m ? 22 : 20))}</tspan>${tag}</text>`;
+    const msg = `${r.message.slice(0, 20).trimEnd()}--------`;
+    const date = r.date.slice(0, 10);
+    if (m) b += t(x, y + 20, msg, { size: 10.5, fill: C.mute, mono: true }) + t(W - x, y + 20, date, { size: 10.5, fill: C.mute, mono: true, anchor: 'end' });
+    else b += t(422, y, msg, { size: 11, fill: C.mute, mono: true }) + t(W - x, y, `${r.language?.replace(' Notebook', '') ?? 'Other'} · ${date}`, { size: 11, fill: C.mute, mono: true, anchor: 'end' });
     b += rule(x, W - x, y + (m ? 36 : 18), C.soft);
   });
-  return svg(W, H, `Recently pushed public repositories: ${list.map((r) => r.name).join(', ')}.`, b);
+  return svg(W, H, `Recently pushed repositories: ${list.map((r) => r.name).join(', ')}.`, b);
 };
 
 const role = ({ when, org, title, link, items }) => (m) => {
@@ -404,7 +440,7 @@ const cards = Object.fromEntries(Object.entries(projects).map(([k, v]) => [`proj
 mkdirSync(new URL('assets/', root), { recursive: true });
 const write = (name, data) => {
   if (data.length > 400_000) throw new Error(`${name} is too large (${data.length} bytes)`);
-  if (/NaN|undefined/.test(data.replace(/data:[^")]+/g, ''))) throw new Error(`${name} has a bad value`);
+  if (!name.startsWith('now') && /NaN|undefined/.test(data.replace(/data:[^")]+/g, ''))) throw new Error(`${name} has a bad value`);
   writeFileSync(new URL(`assets/${name}.svg`, root), data + '\n');
 };
 for (const [k, f] of Object.entries(wide)) { write(k, f(false)); write(`${k}-m`, f(true)); }
