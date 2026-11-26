@@ -13,7 +13,7 @@ I'm **Sajidur Rahman Sajid**, a full-stack software engineer in Dhaka, Banglades
 
 <a href="mailto:sajidsajidurrahman99@gmail.com"><picture><source media="(max-width: 600px)" srcset="assets/available-m.svg"><img src="assets/available.svg" width="100%" alt="Open to better opportunities: full stack, AI/ML engineering, freelance"></picture></a>
 
-<a href="https://www.sajidur.me"><picture><source media="(max-width: 600px)" srcset="assets/stats-m.svg"><img src="assets/stats.svg" width="100%" alt="3.91 CGPA at AIUB, 5 Dean’s Awards, 20+ projects, 2+ years building"></picture></a>
+<a href="https://www.sajidur.me"><picture><source media="(max-width: 600px)" srcset="assets/stats-m.svg"><img src="assets/stats.svg" width="100%" alt="3.91 CGPA at AIUB, 5 Dean’s Awards, 30+ public repositories, 3+ years on GitHub"></picture></a>
 
 <a href="https://github.com/Saji-d?tab=repositories&sort=pushed"><picture><source media="(max-width: 600px)" srcset="assets/now-m.svg"><img src="assets/now.svg" width="100%" alt="Recently pushed repositories"></picture></a>
 
