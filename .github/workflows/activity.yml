@@ -2,7 +2,7 @@ name: Refresh profile cards
 
 on:
   schedule:
-    - cron: "17 3 * * *"
+    - cron: "23 */3 * * *" # every 3 hours; commits only when a number changed
   workflow_dispatch:
 
 permissions:

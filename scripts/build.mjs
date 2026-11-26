@@ -9,7 +9,7 @@ const LOGIN = process.env.GITHUB_REPOSITORY_OWNER || 'Saji-d';
 
 /* ---------------------------------------------------------------- data */
 const query = `query($login:String!){user(login:$login){
-  followers{totalCount}
+  createdAt
   contributionsCollection{totalCommitContributions totalPullRequestContributions totalIssueContributions restrictedContributionsCount
     contributionCalendar{totalContributions weeks{contributionDays{date contributionCount}}}}
   repositories(first:100,privacy:PUBLIC,ownerAffiliations:OWNER,isFork:false,orderBy:{field:PUSHED_AT,direction:DESC}){totalCount
@@ -43,6 +43,10 @@ let current = 0;
 // today may simply not have happened yet, so a zero on the last day does not break the streak
 for (let i = days.length - (days.at(-1).contributionCount ? 1 : 2); i >= 0 && days[i].contributionCount; i--) current++;
 const repos = user.repositories.nodes.filter((r) => !r.isPrivate);
+// the profile repo itself is not a project; round down to a multiple of five so "+" stays true
+const projectCount = `${Math.floor((user.repositories.totalCount - 1) / 5) * 5}+`;
+const yearsOnGitHub = `${Math.floor((Date.now() - new Date(user.createdAt)) / (365.25 * 864e5))}+`;
+const statsAlt = `3.91 CGPA at AIUB, 5 Dean’s Awards, ${projectCount} public repositories, ${yearsOnGitHub} years on GitHub`;
 
 /* ---------------------------------------------------------------- drawing */
 const C = { bg: '#0a0a0b', line: '#26262a', soft: '#1a1a1e', ink: '#ffffff', mute: '#a8a49c', acc: '#8b7cf6', green: '#3fb950' };
@@ -147,14 +151,14 @@ const available = (m) => {
 
 const stats = (m) => {
   const W = m ? 420 : 846, H = m ? 208 : 122;
-  const items = [['3.91', 'CGPA at AIUB'], ['5×', 'Dean’s Awards'], ['20+', 'Projects built'], ['2+', 'Years building']];
+  const items = [['3.91', 'CGPA at AIUB'], ['5×', 'Dean’s Awards'], [projectCount, 'Public repositories'], [yearsOnGitHub, 'Years on GitHub']];
   let b = '';
   items.forEach(([v, l], i) => {
     const x = m ? 26 + (i % 2) * 200 : 44 + i * 196, y = m ? 54 + Math.floor(i / 2) * 94 : 56;
     b += t(x, y, v, { size: 32, w: 700, space: -0.8 }) + t(x, y + 24, l, { size: 12.5, fill: C.mute }) + `<rect x="${x}" y="${y + 40}" width="22" height="1.5" fill="${C.acc}"/>`;
     if (!m && i) b += `<path d="M${x - 24} 28V94" stroke="${C.line}"/>`;
   });
-  return svg(W, H, '3.91 CGPA at AIUB, 5 Dean’s Awards, 20+ projects, 2+ years building.', b);
+  return svg(W, H, `${statsAlt}.`, b);
 };
 
 const now = (m) => {
@@ -413,7 +417,7 @@ I'm **Sajidur Rahman Sajid**, a full-stack software engineer in Dhaka, Banglades
 
 ${full('available', MAIL, 'Open to better opportunities: full stack, AI/ML engineering, freelance')}
 
-${full('stats', S, '3.91 CGPA at AIUB, 5 Dean’s Awards, 20+ projects, 2+ years building')}
+${full('stats', S, statsAlt)}
 
 ${full('now', `https://github.com/${LOGIN}?tab=repositories&sort=pushed`, 'Recently pushed repositories')}
 
