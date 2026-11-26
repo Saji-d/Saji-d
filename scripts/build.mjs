@@ -8,20 +8,19 @@ const b64 = (p, type) => `data:${type};base64,${readFileSync(new URL(p, root)).t
 const LOGIN = process.env.GITHUB_REPOSITORY_OWNER || 'Saji-d';
 
 /* ---------------------------------------------------------------- data */
+const LANGS = 'languages(first:30){edges{size node{name color}}}';
 const query = `query($login:String!){user(login:$login){
   createdAt
   contributionsCollection{totalCommitContributions totalPullRequestContributions totalIssueContributions restrictedContributionsCount
     contributionCalendar{totalContributions weeks{contributionDays{date contributionCount}}}}
   repositories(first:100,privacy:PUBLIC,ownerAffiliations:OWNER,isFork:false,orderBy:{field:PUSHED_AT,direction:DESC}){totalCount
-    nodes{name isPrivate pushedAt primaryLanguage{name color} defaultBranchRef{target{... on Commit{messageHeadline}}}}}}}`;
+    nodes{name isPrivate pushedAt ${LANGS} primaryLanguage{name color} defaultBranchRef{target{... on Commit{messageHeadline}}}}}}}`;
 
-async function load() {
-  if (process.argv[2]) return JSON.parse(readFileSync(process.argv[2], 'utf8')).data.user;
-  if (!process.env.GITHUB_TOKEN) throw new Error('GITHUB_TOKEN is required');
+async function graphql(token, q) {
   const res = await fetch('https://api.github.com/graphql', {
     method: 'POST',
-    headers: { Authorization: `Bearer ${process.env.GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ query, variables: { login: LOGIN } }),
+    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ query: q, variables: { login: LOGIN } }),
     signal: AbortSignal.timeout(30_000),
   });
   const json = await res.json();
@@ -29,7 +28,30 @@ async function load() {
   return json.data.user;
 }
 
+// LANGUAGES_TOKEN can see private repos. Only languages are asked for, never names, so nothing private can reach a card.
+async function privateLanguages() {
+  if (!process.env.LANGUAGES_TOKEN) return null;
+  try {
+    const { repositories: r } = await graphql(process.env.LANGUAGES_TOKEN, `query($login:String!){user(login:$login){
+      repositories(first:100,ownerAffiliations:OWNER,isFork:false){pageInfo{hasNextPage} nodes{isPrivate ${LANGS}}}}}`);
+    if (!r.nodes.some((n) => n.isPrivate)) throw new Error('the token sees no private repositories');
+    if (r.pageInfo.hasNextPage) console.log('::warning::Only the first 100 repositories are counted in the languages card');
+    return r.nodes;
+  } catch (e) {
+    // an expired token must not freeze every other card
+    console.log(`::warning::Languages card is public-only: ${e.message}`);
+    return null;
+  }
+}
+
+async function load() {
+  if (process.argv[2]) return JSON.parse(readFileSync(process.argv[2], 'utf8')).data.user;
+  if (!process.env.GITHUB_TOKEN) throw new Error('GITHUB_TOKEN is required');
+  return graphql(process.env.GITHUB_TOKEN, query);
+}
+
 const user = await load();
+const withPrivate = await privateLanguages();
 const cc = user.contributionsCollection;
 const weeks = cc.contributionCalendar.weeks;
 if (!weeks?.length) throw new Error('Empty contribution calendar');
@@ -43,6 +65,7 @@ let current = 0;
 // today may simply not have happened yet, so a zero on the last day does not break the streak
 for (let i = days.length - (days.at(-1).contributionCount ? 1 : 2); i >= 0 && days[i].contributionCount; i--) current++;
 const repos = user.repositories.nodes.filter((r) => !r.isPrivate);
+const langTitle = withPrivate ? 'Languages by code size, all repos' : 'Languages by code size, public repos';
 // the profile repo itself is not a project; round down to a multiple of five so "+" stays true
 const projectCount = `${Math.floor((user.repositories.totalCount - 1) / 5) * 5}+`;
 const yearsOnGitHub = `${Math.floor((Date.now() - new Date(user.createdAt)) / (365.25 * 864e5))}+`;
@@ -258,15 +281,15 @@ const overview = () => {
 
 const languages = () => {
   const W = 412, H = 232, count = new Map();
-  for (const r of repos) if (r.primaryLanguage) { const k = r.primaryLanguage.name; count.set(k, { n: (count.get(k)?.n ?? 0) + 1, c: r.primaryLanguage.color || C.mute }); }
+  for (const r of withPrivate ?? repos) for (const { size, node } of r.languages.edges) count.set(node.name, { n: (count.get(node.name)?.n ?? 0) + size, c: node.color || C.mute });
   const all = [...count].sort((a, z) => z[1].n - a[1].n), sum = all.reduce((s, [, v]) => s + v.n, 0) || 1;
-  let b = t(22, 36, 'Languages across public repos', { size: 15, w: 700 }), x = 22;
+  let b = t(22, 36, langTitle, { size: 15, w: 700 }), x = 22;
   for (const [, v] of all) { const w = (v.n / sum) * (W - 44); b += `<rect x="${x.toFixed(1)}" y="56" width="${Math.max(1, w - 1.5).toFixed(1)}" height="7" fill="${v.c}"/>`; x += w; }
   all.slice(0, 8).forEach(([name, v], i) => {
     const cx = 22 + (i % 2) * 190, y = 96 + Math.floor(i / 2) * 33;
     b += sq(cx, y - 8, v.c, 7) + t(cx + 15, y, cut(name, 17), { size: 12.5, w: 600 }) + t(cx + 176, y, `${((v.n / sum) * 100).toFixed(1)}%`, { size: 11, fill: C.mute, mono: true, anchor: 'end' }) + rule(cx, cx + 176, y + 11, C.soft);
   });
-  return svg(W, H, `Primary languages: ${all.slice(0, 8).map(([k]) => k).join(', ')}.`, b);
+  return svg(W, H, `${langTitle}: ${all.slice(0, 8).map(([k]) => k).join(', ')}.`, b);
 };
 
 const level = (c) => {
@@ -444,7 +467,7 @@ Neuro-Screen: [study](${S}/research/neuronscreen) · [code](https://github.com/S
 
 <p align="center">
 ${half('overview', `https://github.com/${LOGIN}`, 'GitHub activity overview, last 12 months')}
-${half('languages', `https://github.com/${LOGIN}?tab=repositories`, 'Languages across public repositories')}
+${half('languages', `https://github.com/${LOGIN}?tab=repositories`, langTitle)}
 </p>
 
 ${full('iso', '', 'Isometric contribution chart, last 12 months')}
