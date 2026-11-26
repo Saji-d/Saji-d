@@ -40,7 +40,7 @@ Neuro-Screen: [study](https://www.sajidur.me/research/neuronscreen) · [code](ht
 
 <p align="center">
 <a href="https://github.com/Saji-d"><img src="assets/overview.svg" width="412" alt="GitHub activity overview, last 12 months"></a>
-<a href="https://github.com/Saji-d?tab=repositories"><img src="assets/languages.svg" width="412" alt="Languages across public repositories"></a>
+<a href="https://github.com/Saji-d?tab=repositories"><img src="assets/languages.svg" width="412" alt="Languages by code size, public repos"></a>
 </p>
 
 <picture><source media="(max-width: 600px)" srcset="assets/iso-m.svg"><img src="assets/iso.svg" width="100%" alt="Isometric contribution chart, last 12 months"></picture>
